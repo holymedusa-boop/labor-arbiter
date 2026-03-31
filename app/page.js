@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'qwen3-technical-analysis',
+    title: "Qwen3 Technical Analysis: Alibaba's 235B MoE Model with Hybrid Reasoning Architecture",
+    category: 'Technical Analysis',
+    excerpt: "How Alibaba's latest model achieves GPT-4 level performance with dynamic fast/deep reasoning modes, 22B active parameters, and 70% cost reduction through revolutionary MoE architecture.",
+    date: 'March 31, 2026',
+    readTime: '18 min read'
+  },
+  {
     slug: 'deepseek-v3-deep-dive',
     title: 'DeepSeek-V3: The $5.6M Training Run That Changed AI Economics',
     category: 'Technical Analysis',
