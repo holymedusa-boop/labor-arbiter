@@ -80,6 +80,14 @@ const posts = [
     excerpt: 'How ByteDance built the go-to AI assistant for China\'s content creator generation with deep TikTok and CapCut integration.',
     date: 'April 3, 2026',
     readTime: '15 min read'
+  },
+  {
+    slug: 'minimax-talkie',
+    title: 'MiniMax: The 212 Million User AI Companion Empire Built on Digital Intimacy',
+    category: 'AI Chatbots',
+    excerpt: 'How MiniMax built the world\'s largest AI companion platform with 212 million users across 200 countries through Talkie and emotional AI.',
+    date: 'April 1, 2026',
+    readTime: '16 min read'
   }
 ]
 
