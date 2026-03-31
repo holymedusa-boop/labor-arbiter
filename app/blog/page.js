@@ -56,6 +56,14 @@ const posts = [
     excerpt: 'How Alibaba leverages e-commerce supremacy and cloud infrastructure to dominate enterprise AI adoption in China.',
     date: 'April 2, 2026',
     readTime: '14 min read'
+  },
+  {
+    slug: 'wenxin-yiyan-baidu',
+    title: 'Baidu Wenxin Yiyan: The 300 Million User AI Assistant',
+    category: 'AI Chatbots',
+    excerpt: 'How Baidu built the most widely used AI assistant in China through ecosystem integration and first-mover advantage.',
+    date: 'April 2, 2026',
+    readTime: '14 min read'
   }
 ]
 
