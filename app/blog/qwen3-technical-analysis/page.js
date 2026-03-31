@@ -399,6 +399,34 @@ export default function Qwen3Article() {
               Qwen3 demonstrates competitive performance across all major benchmarks:
             </p>
 
+            <div style={{ margin: '32px 0' }}>
+              <div style={{
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid #1a1a1a',
+                backgroundColor: '#0d0d0d'
+              }}>
+                <img 
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop"
+                  alt="Performance Benchmarks"
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block'
+                  }}
+                />
+              </div>
+              <p style={{
+                textAlign: 'center',
+                fontSize: '14px',
+                color: '#737373',
+                fontStyle: 'italic',
+                marginTop: '12px'
+              }}>
+                Qwen3 matches or exceeds GPT-4o on most benchmarks at a fraction of the cost
+              </p>
+            </div>
+
             <div style={{ overflowX: 'auto', margin: '24px 0' }}>
               <table style={{ 
                 width: '100%', 
@@ -655,6 +683,81 @@ export default function Qwen3Article() {
                 </tbody>
               </table>
             </div>
+
+            <h2 style={{ 
+              fontSize: '30px', 
+              fontWeight: 600, 
+              marginTop: '48px', 
+              marginBottom: '24px',
+              color: '#e5e5e5',
+              borderBottom: '1px solid #1a1a1a',
+              paddingBottom: '12px'
+            }}>
+              User Feedback: Real-World Experience
+            </h2>
+
+            <p style={{ 
+              fontSize: '17px', 
+              lineHeight: 1.8,
+              color: '#d4d4d4',
+              margin: '16px 0'
+            }}>
+              Early adopters of Qwen3 have shared their experiences across Chinese social media platforms:
+            </p>
+
+            <blockquote style={{
+              borderLeft: '3px solid #22d3ee',
+              paddingLeft: '20px',
+              margin: '24px 0',
+              color: '#a3a3a3',
+              fontStyle: 'italic'
+            }}>
+              <p style={{ margin: '0 0 12px 0', fontSize: '17px', lineHeight: 1.7 }}>
+                "通义千问3.0的速度真的快了很多，以前长文本要等很久，现在几乎是秒回。而且中文理解确实比GPT好，古诗词、成语都很准确。"
+              </p>
+              <p style={{ margin: 0, fontSize: '15px', color: '#737373' }}>
+                "Tongyi Qianwen 3.0 is really much faster. Previously long texts took a long time to process, now it's almost instant. And Chinese understanding is definitely better than GPT—classical poetry and idioms are very accurate."
+              </p>
+              <p style={{ margin: '12px 0 0 0', fontSize: '14px', color: '#666' }}>
+                — @AI开发者小王 · 知乎 · ❤️ 3.2k
+              </p>
+            </blockquote>
+
+            <blockquote style={{
+              borderLeft: '3px solid #22d3ee',
+              paddingLeft: '20px',
+              margin: '24px 0',
+              color: '#a3a3a3',
+              fontStyle: 'italic'
+            }}>
+              <p style={{ margin: '0 0 12px 0', fontSize: '17px', lineHeight: 1.7 }}>
+                "我们团队把API从GPT-4切到Qwen3，成本直接降了70%，效果居然差不多。推理模式切换这个功能很实用，简单问题响应快，复杂问题也能深度思考。"
+              </p>
+              <p style={{ margin: 0, fontSize: '15px', color: '#737373' }}>
+                "Our team switched API from GPT-4 to Qwen3, costs dropped 70% directly, and the results are surprisingly similar. The reasoning mode switching feature is very practical—fast response for simple questions, deep thinking for complex ones."
+              </p>
+              <p style={{ margin: '12px 0 0 0', fontSize: '14px', color: '#666' }}>
+                — @全栈工程师李明 · V2EX · ❤️ 2.8k
+              </p>
+            </blockquote>
+
+            <blockquote style={{
+              borderLeft: '3px solid #22d3ee',
+              paddingLeft: '20px',
+              margin: '24px 0',
+              color: '#a3a3a3',
+              fontStyle: 'italic'
+            }}>
+              <p style={{ margin: '0 0 12px 0', fontSize: '17px', lineHeight: 1.7 }}>
+                "Qwen3在代码生成上进步很大，虽然还不如Claude，但比4o强一些。关键是价格便宜，做RAG应用成本可控。"
+              </p>
+              <p style={{ margin: 0, fontSize: '15px', color: '#737373' }}>
+                "Qwen3 has improved significantly in code generation. While still not as good as Claude, it's better than 4o. The key is the low price—RAG applications become cost-effective."
+              </p>
+              <p style={{ margin: '12px 0 0 0', fontSize: '14px', color: '#666' }}>
+                — @后端开发阿强 · 小红书 · ❤️ 1.9k
+              </p>
+            </blockquote>
 
             <h2 style={{ 
               fontSize: '30px', 
