@@ -3128,9 +3128,7 @@ This integration means creators get AI assistance at the exact moment they need 
 ByteDance's AI strategy differs fundamentally from Baidu or Alibaba:
 
 **The Content Flywheel:**
-```
 More creators → More content → More engagement → More data → Better AI → More creators
-```
 
 Doubao exists to accelerate this loop. By lowering the creative barrier, ByteDance expands its content supply—keeping users hooked and advertisers spending.
 
