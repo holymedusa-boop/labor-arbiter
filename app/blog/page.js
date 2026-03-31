@@ -51,14 +51,12 @@ const posts = [
   }
 ]
 
-const stats = [
-  { value: '103+', label: 'Companies Tracked' },
-  { value: '$15B+', label: 'Total Funding' },
-  { value: '500M+', label: 'Global Users' },
-  { value: '24/7', label: 'Market Updates' }
-]
+export const metadata = {
+  title: 'Blog | AI in China',
+  description: 'Latest analysis and insights on Chinese AI companies, products, and market trends.',
+}
 
-export default function Home() {
+export default function BlogPage() {
   return (
     <div style={{ minHeight: '100vh' }}>
       {/* Header */}
@@ -85,18 +83,16 @@ export default function Home() {
             
             <div style={{ display: 'flex', gap: '32px' }}>
               <Link href="/blog" style={{ 
-                color: '#a3a3a3', 
+                color: '#e5e5e5', 
                 textDecoration: 'none',
-                fontSize: '15px',
-                transition: 'color 0.2s'
+                fontSize: '15px'
               }}>
                 Blog
               </Link>
               <Link href="/about" style={{ 
                 color: '#a3a3a3', 
                 textDecoration: 'none',
-                fontSize: '15px',
-                transition: 'color 0.2s'
+                fontSize: '15px'
               }}>
                 About
               </Link>
@@ -105,117 +101,22 @@ export default function Home() {
         </div>
       </header>
 
-      {/* Hero */}
-      <section style={{ padding: '100px 24px', textAlign: 'center' }}>
-        <div style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div style={{
-            display: 'inline-flex',
-            alignItems: 'center',
-            gap: '8px',
-            padding: '8px 16px',
-            backgroundColor: 'rgba(34, 211, 238, 0.1)',
-            border: '1px solid rgba(34, 211, 238, 0.3)',
-            borderRadius: '9999px',
-            color: '#22d3ee',
-            fontSize: '14px',
-            marginBottom: '32px'
-          }}>
-            <span style={{ 
-              width: '8px', 
-              height: '8px', 
-              backgroundColor: '#22d3ee', 
-              borderRadius: '50%',
-              display: 'inline-block'
-            }}></span>
-            Tracking 103+ Chinese AI Companies
-          </div>
-          
-          <h1 style={{ 
-            fontSize: 'clamp(40px, 8vw, 64px)', 
-            fontWeight: 700, 
-            marginBottom: '24px',
-            lineHeight: 1.1
-          }}>
-            The Rise of{' '}
-            <span style={{
-              background: 'linear-gradient(135deg, #22d3ee, #3b82f6, #8b5cf6)',
-              WebkitBackgroundClip: 'text',
-              WebkitTextFillColor: 'transparent'
-            }}>
-              Chinese AI
-            </span>
-          </h1>
-          
-          <p style={{ 
-            fontSize: '20px', 
-            color: '#a3a3a3', 
-            marginBottom: '40px',
-            lineHeight: 1.6
-          }}>
-            Comprehensive analysis of Chinese AI companies, products, and market intelligence 
-            for global investors and builders.
-          </p>
-        </div>
-      </section>
-
-      {/* Stats */}
-      <section style={{ 
-        display: 'flex', 
-        justifyContent: 'center', 
-        gap: '48px',
-        flexWrap: 'wrap',
-        padding: '40px 24px',
-        borderTop: '1px solid #1a1a1a',
-        borderBottom: '1px solid #1a1a1a'
-      }}>
-        {stats.map((stat, i) => (
-          <div key={i} style={{ textAlign: 'center', minWidth: '120px' }}>
-            <div style={{ fontSize: '36px', fontWeight: 700, color: '#22d3ee' }}>
-              {stat.value}
-            </div>
-            <div style={{ fontSize: '14px', color: '#737373', marginTop: '4px' }}>
-              {stat.label}
-            </div>
-          </div>
-        ))}
-      </section>
-
-      {/* Latest Posts */}
-      <section style={{ padding: '80px 24px' }}>
+      {/* Content */}
+      <section style={{ padding: '60px 24px' }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <div style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between', 
-            alignItems: 'center',
-            marginBottom: '40px'
-          }}>
-            <h2 style={{ fontSize: '28px', fontWeight: 600 }}>Latest Analysis</h2>
-            
-            <Link 
-              href="/blog" 
-              style={{ 
-                color: '#22d3ee', 
-                textDecoration: 'none',
-                fontSize: '14px'
-              }}
-            >
-              View all →
-            </Link>
-          </div>
+          <h1 style={{ fontSize: '36px', fontWeight: 700, marginBottom: '48px' }}>All Articles</h1>
           
           <div style={{ 
             display: 'grid', 
             gridTemplateColumns: 'repeat(auto-fill, minmax(340px, 1fr))',
             gap: '24px'
           }}>
-            {posts.slice(0, 6).map((post) => (
+            {posts.map((post) => (
               <article key={post.slug} style={{ 
                 backgroundColor: '#111', 
                 border: '1px solid #1a1a1a',
                 borderRadius: '12px',
-                padding: '24px',
-                transition: 'border-color 0.2s',
-                cursor: 'pointer'
+                padding: '24px'
               }}>
                 <div style={{ 
                   fontSize: '12px', 
@@ -232,14 +133,14 @@ export default function Home() {
                   href={`/blog/${post.slug}`}
                   style={{ textDecoration: 'none', color: 'inherit' }}
                 >
-                  <h3 style={{ 
+                  <h2 style={{ 
                     fontSize: '20px', 
                     fontWeight: 600, 
                     marginBottom: '12px',
                     lineHeight: 1.3
                   }}>
                     {post.title}
-                  </h3>
+                  </h2>
                 </Link>
                 
                 <p style={{ fontSize: '15px', color: '#a3a3a3', lineHeight: 1.5 }}>
