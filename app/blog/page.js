@@ -48,6 +48,14 @@ const posts = [
     excerpt: 'Analysis of Kling, Vidu, and other emerging video generation platforms competing with Sora in the Chinese market.',
     date: 'April 1, 2026',
     readTime: '8 min read'
+  },
+  {
+    slug: 'tongyi-qianwen-alibaba',
+    title: 'Alibaba Tongyi Qianwen: Enterprise AI Powerhouse',
+    category: 'AI Chatbots',
+    excerpt: 'How Alibaba leverages e-commerce supremacy and cloud infrastructure to dominate enterprise AI adoption in China.',
+    date: 'April 2, 2026',
+    readTime: '14 min read'
   }
 ]
 
