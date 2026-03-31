@@ -4,8 +4,12 @@ const posts = {
     category: 'Technical Analysis',
     date: 'March 31, 2026',
     readTime: '18 min read',
+    heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop',
     content: `
 In January 2025, a research team in Hangzhou, China achieved what many considered impossible: training a frontier-level large language model for $5.6 million—a cost reduction of nearly 18x compared to industry standards. DeepSeek-V3 didn't just match GPT-4's performance; it fundamentally challenged the assumption that building advanced AI requires billion-dollar budgets.
+
+![DeepSeek AI Interface](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop)
+*DeepSeek's chat interface demonstrating the model's reasoning capabilities*
 
 This is the complete technical breakdown of how they did it.
 
@@ -23,11 +27,17 @@ DeepSeek-V3's training economics represent a paradigm shift:
 
 The model was trained on 2,048 NVIDIA H800 GPUs over approximately 2 months. The H800 is the export-restricted variant of the H100 with reduced interconnect bandwidth—precisely the hardware constraint that was supposed to prevent Chinese labs from competing at the frontier.
 
+![GPU Cluster](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop)
+*Modern GPU clusters like those used for DeepSeek-V3 training*
+
 ## Architecture Innovation: Three Breakthroughs
 
 ### 1. Multi-Head Latent Attention (MLA)
 
 Traditional transformer attention stores full key-value (KV) caches, creating a memory bottleneck that grows with sequence length. MLA revolutionizes this through compression.
+
+![Neural Network Architecture](https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800&h=400&fit=crop)
+*Visualization of attention mechanisms in transformer architectures*
 
 **How MLA Works:**
 
@@ -77,6 +87,9 @@ This improved training stability—DeepSeek-V3 completed its full training run w
 ### 3. FP8 Mixed Precision Training
 
 DeepSeek-V3 was the first open LLM trained using FP8 (8-bit floating point) mixed precision—a technique previously considered too unstable for models above 100B parameters.
+
+![Data Center](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop)
+*High-performance computing infrastructure for AI training*
 
 **FP8 Implementation:**
 
@@ -143,6 +156,9 @@ DeepSeek used Group Relative Policy Optimization (GRPO), a variant of PPO that e
 ## Benchmark Performance: The Results
 
 DeepSeek-V3 matches or exceeds GPT-4 across most benchmarks:
+
+![Performance Chart](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop)
+*Benchmark comparison visualization showing DeepSeek-V3 performance*
 
 **Reasoning & Knowledge:**
 
@@ -211,6 +227,9 @@ DeepSeek-V3 proves that algorithmic innovation can substitute for capital expend
 
 DeepSeek released V3 under the MIT license, triggering massive adoption:
 
+![Open Source](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop)
+*Open source development and collaboration*
+
 **Adoption Metrics (First 90 Days):**
 - HuggingFace downloads: 2M+
 - GitHub forks: 15K+
@@ -262,14 +281,21 @@ The age of billion-dollar training runs is ending. The age of efficient, accessi
     category: 'AI Chatbots',
     date: 'March 31, 2026',
     readTime: '16 min read',
+    heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop',
     content: `
 When Cursor announced that Composer 2.0 was built on Kimi K2.5 rather than GPT-4 or Claude, the message was clear: Chinese foundation models had reached parity with Western alternatives. But Kimi isn't just matching competitors—it's pioneering capabilities like Agent Swarm orchestration and trillion-parameter efficiency that redefine what's possible with large language models.
+
+![AI Assistant Interface](https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800&h=400&fit=crop)
+*Modern AI assistant interfaces like Kimi K2.5*
 
 This is the complete technical analysis of Moonshot AI's flagship model.
 
 ## The K2.5 Architecture: A Trillion Parameters, Efficiently
 
 Kimi K2.5 represents one of the most sophisticated implementations of Mixture-of-Experts (MoE) architecture deployed at scale. With 1 trillion total parameters but only 32 billion active per token, it achieves massive model capacity with tractable inference costs.
+
+![Neural Network](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop)
+*Neural network architecture visualization*
 
 ### Core Specifications
 
@@ -314,7 +340,7 @@ Kimi's MLA implementation builds on DeepSeek's innovation but extends it for eve
 K2 uses a three-stage training process for context extension:
 
 | Stage | Context | Tokens | Method |
-|-------|---------|--------|--------|
+|-------|---------|--------|---------|
 | Pre-training | 4K | 10T | Base architecture |
 | Extension | 32K | 5.5T | RoPE scaling |
 | Full Context | 256K | YaRN | Position interpolation |
@@ -324,6 +350,9 @@ The final stage uses YaRN (Yet another RoPE extension method) to achieve the ful
 ## Agent Swarm: Autonomous Parallel Execution
 
 K2.5's most distinctive feature is Agent Swarm—a capability that coordinates up to 100 parallel sub-agents working on different aspects of a complex task.
+
+![Multi-Agent System](https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&h=400&fit=crop)
+*Multi-agent AI systems working in parallel*
 
 ### How Agent Swarm Works
 
@@ -367,6 +396,9 @@ Each sub-agent can be configured with:
 
 Unlike models that add vision capabilities after text pre-training, K2.5 was trained as a natively multimodal model from the start.
 
+![Computer Vision](https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800&h=400&fit=crop)
+*Computer vision and multimodal AI processing*
+
 ### MoonViT-3D Vision Encoder
 
 K2.5 uses a custom vision transformer architecture:
@@ -392,6 +424,9 @@ K2.5 uses a custom vision transformer architecture:
 ## Benchmark Performance
 
 K2.5 demonstrates frontier-level performance across all major benchmarks:
+
+![Data Analysis](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop)
+*Performance metrics and benchmark analysis*
 
 ### Reasoning Benchmarks
 
@@ -433,6 +468,9 @@ This validation from a leading developer tool company demonstrates that K2.5's c
 ## Kimi Code: Terminal-Native AI Engineering
 
 Moonshot released Kimi Code, an open-source terminal-based coding agent that competes with Claude Code and Aider.
+
+![Code Editor](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop)
+*AI-powered code editors and development environments*
 
 ### Technical Specifications
 
@@ -526,8 +564,12 @@ The era of Western AI dominance is ending. The multipolar AI future has arrived.
     category: 'Market Intelligence',
     date: 'March 31, 2026',
     readTime: '22 min read',
+    heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&h=600&fit=crop',
     content: `
 The Chinese AI ecosystem has reached an inflection point. With over 103 significant companies spanning foundation models, application layers, and infrastructure, China's AI sector has transformed from a follower into a global leader that rivals Silicon Valley. Our comprehensive analysis reveals $15.2 billion in disclosed funding, 500 million combined active users, and a market that is reshaping global AI economics.
+
+![Business District](https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&h=400&fit=crop)
+*China's thriving technology and business district*
 
 This is the definitive tracking report for investors, strategists, and builders monitoring the Chinese AI landscape.
 
@@ -542,6 +584,9 @@ This is the definitive tracking report for investors, strategists, and builders 
 | Combined Active Users | 500M+ | +85% |
 | Registered Foundation Models | 200+ | +120% |
 | Market Size (est.) | $29B | +33% |
+
+![Growth Chart](https://images.unsplash.com/photo-1543286386-713bdd548da4?w=800&h=400&fit=crop)
+*Market growth and investment trends*
 
 ### Key Trends
 
@@ -590,6 +635,9 @@ Founded by Liang Wenfeng in 2023, DeepSeek has become synonymous with training e
 **The Capability Leader**
 
 Founded by Yang Zhilin in 2023, Moonshot AI has pushed the frontier of what's possible with large language models. Kimi K2.5's trillion-parameter architecture and 256K context window represent genuine technical leadership.
+
+![Technology Office](https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&h=400&fit=crop)
+*Modern AI research and development facilities*
 
 **Key Metrics:**
 - **Valuation**: $18B (March 2026)
@@ -652,6 +700,9 @@ Founded by Yan Junjie in 2021, MiniMax has emerged as the leader in AI video and
 
 Founded by Kai-Fu Lee in 2023, 01.AI has built one of the world's most capable open-weight model families. The Yi series demonstrates that open research can compete with closed alternatives.
 
+![Open Source](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop)
+*Open source AI development community*
+
 **Key Metrics:**
 - **Valuation**: $3.5B (estimated)
 - **Funding**: $200M Series A
@@ -711,6 +762,9 @@ Founded by Wang Xiaochuan (former CEO of Sogou) in 2023, Baichuan focuses on ind
 
 ### Consumer Applications
 
+![Mobile Apps](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=400&fit=crop)
+*AI-powered mobile applications*
+
 **ByteDance Doubao**
 - **Users**: 100M+ MAU (largest Chinese AI app)
 - **Features**: Chat, writing, image generation, voice
@@ -730,7 +784,7 @@ Founded by Wang Xiaochuan (former CEO of Sogou) in 2023, Baichuan focuses on ind
 **iFlytek Spark**
 - **Users**: 50M+ (enterprise + consumer)
 - **Strengths**: Voice recognition, translation
-- **Market**: Education, healthcare, government
+- **Markets**: Education, healthcare, government
 - **Revenue**: $2B+ (total company, AI segment growing)
 
 **WPS AI**
@@ -740,6 +794,9 @@ Founded by Wang Xiaochuan (former CEO of Sogou) in 2023, Baichuan focuses on ind
 - **Market Share**: 60% of AI-powered office tools (China)
 
 ### Creative Tools
+
+![Creative AI](https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=400&fit=crop)
+*AI-powered creative content generation*
 
 **Video Generation**
 | Platform | Company | Max Duration | Resolution | Differentiation |
@@ -756,6 +813,9 @@ Founded by Wang Xiaochuan (former CEO of Sogou) in 2023, Baichuan focuses on ind
 ## Infrastructure Layer: The Foundation
 
 ### Domestic Chip Manufacturers
+
+![Semiconductor](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop)
+*Semiconductor and chip manufacturing*
 
 **Biren Technology**
 - **Product**: BR100 GPU
@@ -788,6 +848,9 @@ Founded by Wang Xiaochuan (former CEO of Sogou) in 2023, Baichuan focuses on ind
 - Tencent Cloud: Mixed NVIDIA/domestic
 
 ## Funding Landscape: Capital Flows
+
+![Investment](https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=400&fit=crop)
+*Venture capital and AI investment landscape*
 
 ### 2024-2026 Major Rounds
 
@@ -852,6 +915,9 @@ On most benchmarks, top Chinese models match or exceed Western alternatives:
 
 ### Geopolitical Constraints
 
+![Global Network](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop)
+*Global technology and connectivity landscape*
+
 **Chip Access**
 - H800 export restrictions limiting scaling
 - Domestic alternatives (Ascend, Biren) catching up but not parity
@@ -910,8 +976,12 @@ The Chinese AI Index will continue tracking this rapidly evolving landscape. The
     category: 'AI Chatbots',
     date: 'March 31, 2026',
     readTime: '14 min read',
+    heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop',
     content: `
 Choosing between DeepSeek and ChatGPT is no longer straightforward. What started as a simple "Western vs Chinese" decision has evolved into a nuanced technical and economic calculation. With DeepSeek-V3 achieving GPT-4 level performance at 1/18th the cost, the default choice has shifted.
+
+![AI Comparison](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop)
+*Comparing leading AI language models*
 
 This comprehensive comparison helps you decide which model fits your specific needs based on real benchmarks, pricing, and production considerations.
 
@@ -927,6 +997,9 @@ This comprehensive comparison helps you decide which model fits your specific ne
 | GPQA Diamond | 59.1% | 53.6% | 85.3% | GPT-5 |
 | SWE-Bench | 42.0% | N/A | 68.4% | GPT-5 |
 | Codeforces | 2029 | 759 | 1900+ | DeepSeek |
+
+![Performance Data](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop)
+*Benchmark performance comparison data visualization*
 
 **Analysis:**
 - GPT-5 leads on most reasoning and coding benchmarks
@@ -955,6 +1028,9 @@ Processing 1 billion tokens/month:
 **Savings with DeepSeek: 95% vs GPT-4o, 94% vs GPT-5**
 
 ### Architecture Differences
+
+![AI Architecture](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop)
+*AI model architecture and neural networks*
 
 **DeepSeek-V3:**
 - **Parameters**: 671B total, 37B active (MoE)
@@ -993,6 +1069,9 @@ DeepSeek-V3 is available under MIT license:
 - No API dependency
 - Community optimizations (quantization, etc.)
 
+![Open Source](https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800&h=400&fit=crop)
+*Open source AI development and community*
+
 **3. Math and Reasoning**
 Surprisingly strong on mathematical reasoning:
 - MATH-500: 90.2% (vs GPT-4o's 74.6%)
@@ -1018,6 +1097,9 @@ Massive moat through integrations:
 - Microsoft Office
 - ChatGPT plugins
 - Zapier/Make.com connections
+
+![Developer Tools](https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=400&fit=crop)
+*Developer tools and coding environments*
 
 **3. Voice Mode**
 GPT-4o's native audio capabilities:
@@ -1213,8 +1295,12 @@ The era of defaulting to OpenAI is over. The era of intelligent model selection 
     category: 'Market Intelligence',
     date: 'March 31, 2026',
     readTime: '20 min read',
+    heroImage: 'https://images.unsplash.com/photo-1537519646099-335112f03225?w=1200&h=600&fit=crop',
     content: `
 China's AI ecosystem has evolved from a fragmented collection of research labs into a comprehensive industrial stack that rivals Silicon Valley. Understanding this landscape—from domestic chip manufacturers to consumer applications—is essential for anyone tracking the future of artificial intelligence.
+
+![Technology Ecosystem](https://images.unsplash.com/photo-1537519646099-335112f03225?w=800&h=400&fit=crop)
+*China's technology and innovation ecosystem*
 
 This is the complete ecosystem map, from silicon to software.
 
@@ -1231,6 +1317,9 @@ This is the complete ecosystem map, from silicon to software.
 ## Layer 1: Compute Infrastructure
 
 ### Domestic AI Chip Manufacturers
+
+![Semiconductor](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop)
+*Semiconductor chip manufacturing and technology*
 
 **The Context:** US export controls have accelerated domestic chip development. While still behind NVIDIA, Chinese alternatives are approaching viability for training and inference.
 
@@ -1283,6 +1372,9 @@ The consumer play:
 
 ### Cloud Infrastructure
 
+![Data Center](https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=400&fit=crop)
+*Cloud infrastructure and data centers*
+
 **Alibaba Cloud**
 - Largest public cloud in Asia-Pacific
 - GPU fleet: 100,000+ accelerators
@@ -1316,6 +1408,9 @@ The consumer play:
 ## Layer 2: Foundation Models
 
 ### The "Six Tigers"
+
+![AI Research](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop)
+*AI research and development laboratories*
 
 Six companies now dominate Chinese foundation models:
 
@@ -1371,6 +1466,9 @@ DeepSeek first to train 100B+ models in FP8:
 
 ### Beijing Academy of AI (BAAI)
 
+![Research Lab](https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&h=400&fit=crop)
+*AI research laboratories and institutions*
+
 China's closest equivalent to OpenAI or DeepMind:
 - **Founded**: 2018
 - **Leadership**: Academician Zhang Bo
@@ -1406,6 +1504,9 @@ Research-to-production pipeline:
 ## Layer 4: Application Layer
 
 ### Consumer AI Applications
+
+![Mobile AI](https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&h=400&fit=crop)
+*AI-powered mobile applications and interfaces*
 
 **ByteDance Doubao**
 The category leader:
@@ -1451,6 +1552,9 @@ B2B leader:
 
 ### Creative Tools
 
+![Creative AI](https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800&h=400&fit=crop)
+*AI-powered creative content generation*
+
 **Video Generation**
 | Platform | Strength | Status |
 |----------|----------|--------|
@@ -1474,6 +1578,9 @@ B2B leader:
 
 ### Healthcare AI
 
+![Healthcare](https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=400&fit=crop)
+*AI applications in healthcare and medicine*
+
 **Key Players:**
 - **Tencent Medical AI**: Imaging diagnosis
 - **iFlytek**: Voice-enabled diagnostics
@@ -1491,6 +1598,9 @@ B2B leader:
 - Strict data privacy requirements
 
 ### Financial AI
+
+![Finance](https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=400&fit=crop)
+*AI in financial services and banking*
 
 **Ant Group**
 - Credit scoring (Sesame Credit)
@@ -1510,6 +1620,9 @@ B2B leader:
 
 ### Autonomous Vehicles
 
+![Autonomous Vehicle](https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800&h=400&fit=crop)
+*Autonomous vehicle and self-driving technology*
+
 **Baidu Apollo**
 - 5 million+ test miles
 - Robotaxi service in 10 cities
@@ -1528,6 +1641,9 @@ B2B leader:
 ## Competitive Dynamics
 
 ### China vs US: Head-to-Head
+
+![Global Competition](https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop)
+*Global technology competition landscape*
 
 | Dimension | China | US | Winner |
 |-----------|-------|-----|--------|
@@ -1557,6 +1673,9 @@ B2B leader:
 - Mobile-first vs desktop
 
 ## Investment Themes
+
+![Investment](https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=400&fit=crop)
+*Venture capital and technology investment*
 
 ### Bullish Factors
 
@@ -1609,6 +1728,9 @@ China's AI ecosystem is reshaping global markets:
 
 ## Conclusion: A Bifurcated Future
 
+![Future Technology](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop)
+*The future of AI technology development*
+
 The global AI landscape is bifurcating into two poles:
 
 **US Ecosystem:**
@@ -1635,8 +1757,12 @@ Understanding this ecosystem is no longer optional for anyone serious about AI.
     category: 'AI Video',
     date: 'April 1, 2026',
     readTime: '15 min read',
+    heroImage: 'https://images.unsplash.com/photo-1536240478700-b869070f9279?w=1200&h=600&fit=crop',
     content: `
 While OpenAI's Sora captured global attention with its demonstration videos, Chinese companies have been quietly building video generation tools that are already in production use. Kling, Vidu, and Hailuo AI offer capabilities that rival or exceed Sora in specific domains—and they're available today.
+
+![AI Video Generation](https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800&h=400&fit=crop)
+*AI-powered video generation and editing*
 
 This technical comparison examines the state of Chinese AI video generation, analyzing architectures, capabilities, pricing, and real-world performance.
 
@@ -1654,6 +1780,9 @@ This technical comparison examines the state of Chinese AI video generation, ana
 ## Kling (Kwai): The Production Leader
 
 ### Technical Architecture
+
+![Video Technology](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=400&fit=crop)
+*Video production and editing technology*
 
 Kling represents the most mature video generation platform in China, developed by Kwai (快手), the company behind the second-largest short video platform in China.
 
@@ -1724,6 +1853,9 @@ Kling represents the most mature video generation platform in China, developed b
 
 ### Real-World Use Cases
 
+![Video Marketing](https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=400&fit=crop)
+*Video content creation for marketing*
+
 **Marketing and Advertising:**
 - Product demonstration videos
 - Social media content
@@ -1744,6 +1876,9 @@ Traditional production vs AI generation:
 ## Vidu: The Visual Quality Leader
 
 ### Technical Approach
+
+![High Quality Video](https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800&h=400&fit=crop)
+*High-fidelity video production*
 
 Vidu, developed by 生数科技 (Shengshu Technology), focuses on visual fidelity above all else. The platform emerged from Tsinghua University research.
 
@@ -1801,6 +1936,9 @@ Vidu remains in limited beta with selective access:
 
 ### Technical Innovation
 
+![Audio Video](https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=800&h=400&fit=crop)
+*Synchronized audio and video production*
+
 Hailuo AI (海螺 AI) represents a unique approach: synchronized audio-video generation. Developed by MiniMax, it generates video with matching audio in a single pass.
 
 **Architecture:**
@@ -1847,6 +1985,9 @@ Hailuo AI (海螺 AI) represents a unique approach: synchronized audio-video gen
 
 ### Architecture Deep Dive
 
+![AI Architecture](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop)
+*AI model architecture comparison*
+
 | Component | Kling | Vidu | Hailuo | Sora |
 |-----------|-------|------|--------|------|
 | **Base Model** | Diffusion Transformer | Latent Diffusion | Diffusion + Audio | Diffusion Transformer |
@@ -1888,6 +2029,9 @@ Hailuo AI (海螺 AI) represents a unique approach: synchronized audio-video gen
 
 ## China vs Sora: The Reality
 
+![AI Competition](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop)
+*Global AI video generation competition*
+
 ### Where Chinese Tools Lead
 
 1. **Availability**
@@ -1925,6 +2069,9 @@ Hailuo AI (海螺 AI) represents a unique approach: synchronized audio-video gen
 
 ## Industry Applications
 
+![Video Applications](https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800&h=400&fit=crop)
+*Video content applications across industries*
+
 ### Marketing and Advertising
 
 **Kling Use Cases:**
@@ -1939,6 +2086,9 @@ Hailuo AI (海螺 AI) represents a unique approach: synchronized audio-video gen
 
 ### Film and Entertainment
 
+![Film Production](https://images.unsplash.com/photo-1485846234645-a62644f84728?w=800&h=400&fit=crop)
+*Film and entertainment production*
+
 **Pre-Visualization:**
 - Storyboard animation
 - Scene blocking
@@ -1952,6 +2102,9 @@ Hailuo AI (海螺 AI) represents a unique approach: synchronized audio-video gen
 - Shot planning
 
 ### Education and Training
+
+![Education](https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=400&fit=crop)
+*Educational content and e-learning*
 
 **Content Creation:**
 - Educational animations
@@ -1994,6 +2147,9 @@ Chinese video generation operates under strict regulations:
 
 ## Future Roadmap
 
+![Future Tech](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop)
+*Future of AI video technology*
+
 ### Kling (Kwai)
 
 **2026 Plans:**
@@ -2032,6 +2188,9 @@ Chinese video generation operates under strict regulations:
 
 ## Investment Implications
 
+![Investment](https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800&h=400&fit=crop)
+*Technology investment landscape*
+
 ### Market Size
 
 China AI video generation market:
@@ -2066,6 +2225,9 @@ China AI video generation market:
 
 Chinese AI video generation tools demonstrate that innovation isn't confined to Silicon Valley:
 
+![Innovation](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop)
+*AI innovation and technology development*
+
 **Chinese Tools Excel At:**
 - Production availability (shipping products)
 - Cost efficiency (20-50x cheaper)
@@ -2092,7 +2254,7 @@ For most use cases in 2026, Chinese video generation tools are the pragmatic cho
 }
 
 export function generateStaticParams() {
-  return Object.keys(posts).map((slug) => ({ slug }))
+  return Object.keys(posts).map((slug) =>> ({ slug }))
 }
 
 export function generateMetadata({ params }) {
@@ -2123,14 +2285,71 @@ export default function BlogPost({ params }) {
     )
   }
   
-  // Markdown-like rendering
-  const renderContent = (content) => {
+  // Parse markdown content with image support
+  const parseContent = (content) => {
     const lines = content.split('\n')
     const elements = []
     let i = 0
     
     while (i < lines.length) {
-      const line = lines[i]
+      const line = lines[i].trim()
+      
+      // Skip empty lines
+      if (line === '') {
+        i++
+        continue
+      }
+      
+      // Image with caption: ![alt](url) followed by *caption*
+      if (line.startsWith('![') && line.includes('](')) {
+        const imgMatch = line.match(/!\[([^\]]*)\]\(([^)]+)\)/)
+        if (imgMatch) {
+          const alt = imgMatch[1]
+          const src = imgMatch[2]
+          
+          // Check for caption on next line
+          let caption = null
+          if (i + 1 < lines.length && lines[i + 1].trim().startsWith('*') && lines[i + 1].trim().endsWith('*')) {
+            caption = lines[i + 1].trim().slice(1, -1)
+            i++
+          }
+          
+          elements.push(
+            <div key={i} style={{ margin: '32px 0' }}>
+              <div style={{
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid #1a1a1a',
+                backgroundColor: '#0d0d0d'
+              }}>
+                <img 
+                  src={src} 
+                  alt={alt}
+                  style={{
+                    width: '100%',
+                    height: 'auto',
+                    display: 'block'
+                  }}
+                  loading="lazy"
+                />
+              </div>
+              {caption && (
+                <p style={{
+                  textAlign: 'center',
+                  fontSize: '14px',
+                  color: '#737373',
+                  fontStyle: 'italic',
+                  marginTop: '12px'
+                }}>
+                  {caption}
+                </p>
+              )}
+            </div>
+          )
+          i++
+          continue
+        }
+      }
       
       // H2
       if (line.startsWith('## ')) {
@@ -2162,8 +2381,8 @@ export default function BlogPost({ params }) {
           </h3>
         )
       }
-      // H4
-      else if (line.startsWith('**') && line.endsWith('**') && !line.slice(2, -2).includes('**')) {
+      // H4 / Bold heading
+      else if (line.startsWith('**') && line.endsWith('**') && line.length < 100 && !line.slice(2, -2).includes('**')) {
         elements.push(
           <h4 key={i} style={{ 
             fontSize: '18px', 
@@ -2179,13 +2398,12 @@ export default function BlogPost({ params }) {
       // Table
       else if (line.startsWith('| ') && line.includes(' | ')) {
         const tableLines = []
-        while (i < lines.length && lines[i].startsWith('|')) {
+        while (i < lines.length && lines[i].trim().startsWith('|')) {
           if (!lines[i].includes('---')) {
             tableLines.push(lines[i])
           }
           i++
         }
-        i--
         
         const rows = tableLines.map(l => l.split('|').slice(1, -1).map(c => c.trim()))
         
@@ -2210,8 +2428,7 @@ export default function BlogPost({ params }) {
                           fontWeight: rowIdx === 0 ? 600 : 400,
                           color: rowIdx === 0 ? '#22d3ee' : '#d4d4d4',
                           textAlign: 'left'
-                        }}
-003e
+                        }}>
                           {cell.replace(/\*\*/g, '')}
                         </td>
                       ))}
@@ -2222,6 +2439,7 @@ export default function BlogPost({ params }) {
             </div>
           )
         }
+        continue
       }
       // Code block
       else if (line.startsWith('\`\`\`')) {
@@ -2248,7 +2466,7 @@ export default function BlogPost({ params }) {
           </pre>
         )
       }
-      // Blockquote/Important
+      // Blockquote
       else if (line.startsWith('> ')) {
         elements.push(
           <blockquote key={i} style={{
@@ -2263,10 +2481,10 @@ export default function BlogPost({ params }) {
         )
       }
       // Bullet list
-      else if (line.startsWith('- ') || line.startsWith('**') && line.includes(':**')) {
+      else if (line.startsWith('- ')) {
         const listItems = []
-        while (i < lines.length && (lines[i].startsWith('- ') || lines[i].startsWith('**'))) {
-          const content = lines[i].replace(/^- /, '').replace(/\*\*/g, '')
+        while (i < lines.length && lines[i].trim().startsWith('- ')) {
+          const content = lines[i].trim().replace(/^- /, '').replace(/\*\*/g, '')
           const parts = content.split(':** ')
           if (parts.length === 2) {
             listItems.push(
@@ -2281,7 +2499,6 @@ export default function BlogPost({ params }) {
           }
           i++
         }
-        i--
         elements.push(
           <ul key={i} style={{ 
             margin: '20px 0', 
@@ -2291,10 +2508,28 @@ export default function BlogPost({ params }) {
             {listItems}
           </ul>
         )
+        continue
       }
-      // Empty line
-      else if (line.trim() === '') {
-        // Skip
+      // Numbered list
+      else if (/^\d+\.\s/.test(line)) {
+        const listItems = []
+        while (i < lines.length && /^\d+\.\s/.test(lines[i].trim())) {
+          const content = lines[i].trim().replace(/^\d+\.\s/, '').replace(/\*\*/g, '')
+          listItems.push(
+            <li key={i} style={{ margin: '10px 0', lineHeight: 1.7 }}>{content}</li>
+          )
+          i++
+        }
+        elements.push(
+          <ol key={i} style={{ 
+            margin: '20px 0', 
+            paddingLeft: '24px',
+            color: '#d4d4d4'
+          }}>
+            {listItems}
+          </ol>
+        )
+        continue
       }
       // Regular paragraph with bold
       else {
@@ -2365,7 +2600,34 @@ export default function BlogPost({ params }) {
         </div>
       </header>
 
-      <article style={{ padding: '60px 24px' }}>
+      {post.heroImage && (
+        <div style={{
+          width: '100%',
+          height: '400px',
+          overflow: 'hidden',
+          position: 'relative'
+        }}>
+          <img 
+            src={post.heroImage}
+            alt={post.title}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover'
+            }}
+          />
+          <div style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: '200px',
+            background: 'linear-gradient(to top, #0a0a0a, transparent)'
+          }}/>
+        </div>
+      )}
+
+      <article style={{ padding: post.heroImage ? '20px 24px 60px' : '60px 24px' }}>
         <div style={{ maxWidth: '780px', margin: '0 auto' }}>
           <div style={{ 
             fontSize: '12px', 
@@ -2402,7 +2664,7 @@ export default function BlogPost({ params }) {
           </div>
           
           <div>
-            {renderContent(post.content)}
+            {parseContent(post.content)}
           </div>
         </div>
       </article>
