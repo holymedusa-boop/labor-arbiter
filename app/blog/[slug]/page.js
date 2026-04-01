@@ -3754,6 +3754,7 @@ export function generateStaticParams() {
 
 export default function BlogPost({ params }) {
   const post = posts[params.slug]
+  const meta = postMetadata[params.slug]
   
   if (!post) {
     return (
@@ -3768,6 +3769,39 @@ export default function BlogPost({ params }) {
         <Link href="/blog" style={{ color: '#22d3ee' }}>← Back to Blog</Link>
       </div>
     )
+  }
+
+  // Generate JSON-LD structured data
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'TechArticle',
+    headline: post.title,
+    description: meta?.metaDescription || post.title,
+    image: post.heroImage,
+    datePublished: new Date(post.date).toISOString(),
+    dateModified: new Date(post.date).toISOString(),
+    author: {
+      '@type': 'Organization',
+      name: 'AI in China',
+      url: 'https://www.ainchina.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'AI in China',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://www.ainchina.com/logo.png',
+      },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://www.ainchina.com/blog/${params.slug}/`,
+    },
+    about: {
+      '@type': 'Thing',
+      name: post.category,
+    },
+    keywords: meta?.keywords || 'Chinese AI',
   }
   
   // Parse markdown content with image support
@@ -4043,7 +4077,12 @@ export default function BlogPost({ params }) {
   }
   
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a' }}>
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a' }}>
       <header style={{ 
         borderBottom: '1px solid #1a1a1a',
         position: 'sticky',
@@ -4164,5 +4203,6 @@ export default function BlogPost({ params }) {
         </p>
       </footer>
     </div>
+    </>
   )
 }
