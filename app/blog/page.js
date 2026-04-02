@@ -2,6 +2,54 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'doubao-bytedance',
+    title: 'ByteDance Doubao: The 200 Million User AI Assistant Reshaping Content Creation',
+    category: 'AI Chatbots',
+    excerpt: 'How ByteDance built the go-to AI assistant for China\'s content creator generation with deep TikTok and CapCut integration.',
+    date: 'April 3, 2026',
+    readTime: '15 min read'
+  },
+  {
+    slug: 'tongyi-qianwen-alibaba',
+    title: 'Alibaba Tongyi Qianwen: Enterprise AI Powerhouse',
+    category: 'AI Chatbots',
+    excerpt: 'How Alibaba leverages e-commerce supremacy and cloud infrastructure to dominate enterprise AI adoption in China.',
+    date: 'April 2, 2026',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'wenxin-yiyan-baidu',
+    title: 'Baidu Wenxin Yiyan: The 300 Million User AI Assistant',
+    category: 'AI Chatbots',
+    excerpt: 'How Baidu built the most widely used AI assistant in China through ecosystem integration and first-mover advantage.',
+    date: 'April 2, 2026',
+    readTime: '14 min read'
+  },
+  {
+    slug: 'ai-thesis-writing-china',
+    title: 'AI Thesis Writing Explodes: How 12 Million Chinese Students Are Rewriting Academic Rules',
+    category: 'AI Chatbots',
+    excerpt: 'With 320 million views on Xiaohongshu, AI-assisted thesis writing has become a phenomenon reshaping China\'s higher education. A deep dive into the tools, workflows, and global implications.',
+    date: 'April 2, 2026',
+    readTime: '16 min read'
+  },
+  {
+    slug: 'ai-video-tools-china',
+    title: 'Chinese AI Video Generation Tools',
+    category: 'AI Video',
+    excerpt: 'Analysis of Kling, Vidu, and other emerging video generation platforms competing with Sora in the Chinese market.',
+    date: 'April 1, 2026',
+    readTime: '8 min read'
+  },
+  {
+    slug: 'minimax-talkie',
+    title: 'MiniMax: The 212 Million User AI Companion Empire Built on Digital Intimacy',
+    category: 'AI Chatbots',
+    excerpt: 'How MiniMax built the world\'s largest AI companion platform with 212 million users across 200 countries through Talkie and emotional AI.',
+    date: 'April 1, 2026',
+    readTime: '16 min read'
+  },
+  {
     slug: 'qwen3-technical-analysis',
     title: "Qwen3 Technical Analysis: Alibaba's 235B MoE Model",
     category: 'Technical Analysis',
@@ -48,54 +96,6 @@ const posts = [
     excerpt: 'From foundation models to application layer: mapping the entire Chinese AI ecosystem and its global implications.',
     date: 'March 31, 2026',
     readTime: '10 min read'
-  },
-  {
-    slug: 'ai-video-tools-china',
-    title: 'Chinese AI Video Generation Tools',
-    category: 'AI Video',
-    excerpt: 'Analysis of Kling, Vidu, and other emerging video generation platforms competing with Sora in the Chinese market.',
-    date: 'April 1, 2026',
-    readTime: '8 min read'
-  },
-  {
-    slug: 'tongyi-qianwen-alibaba',
-    title: 'Alibaba Tongyi Qianwen: Enterprise AI Powerhouse',
-    category: 'AI Chatbots',
-    excerpt: 'How Alibaba leverages e-commerce supremacy and cloud infrastructure to dominate enterprise AI adoption in China.',
-    date: 'April 2, 2026',
-    readTime: '14 min read'
-  },
-  {
-    slug: 'wenxin-yiyan-baidu',
-    title: 'Baidu Wenxin Yiyan: The 300 Million User AI Assistant',
-    category: 'AI Chatbots',
-    excerpt: 'How Baidu built the most widely used AI assistant in China through ecosystem integration and first-mover advantage.',
-    date: 'April 2, 2026',
-    readTime: '14 min read'
-  },
-  {
-    slug: 'doubao-bytedance',
-    title: 'ByteDance Doubao: The 200 Million User AI Assistant Reshaping Content Creation',
-    category: 'AI Chatbots',
-    excerpt: 'How ByteDance built the go-to AI assistant for China\'s content creator generation with deep TikTok and CapCut integration.',
-    date: 'April 3, 2026',
-    readTime: '15 min read'
-  },
-  {
-    slug: 'minimax-talkie',
-    title: 'MiniMax: The 212 Million User AI Companion Empire Built on Digital Intimacy',
-    category: 'AI Chatbots',
-    excerpt: 'How MiniMax built the world\'s largest AI companion platform with 212 million users across 200 countries through Talkie and emotional AI.',
-    date: 'April 1, 2026',
-    readTime: '16 min read'
-  },
-  {
-    slug: 'ai-thesis-writing-china',
-    title: 'AI Thesis Writing Explodes: How 12 Million Chinese Students Are Rewriting Academic Rules',
-    category: 'AI Chatbots',
-    excerpt: 'With 320 million views on Xiaohongshu, AI-assisted thesis writing has become a phenomenon reshaping China\'s higher education. A deep dive into the tools, workflows, and global implications.',
-    date: 'April 2, 2026',
-    readTime: '16 min read'
   }
 ]
 
