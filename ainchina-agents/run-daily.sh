@@ -87,6 +87,12 @@ Agent 1/2 已完成:
 ✅ traffic-report-$DATE.json
 ✅ market-brief-$DATE.json
 
+⚠️ CRITICAL - Language Standard:
+📝 ALL articles MUST be written in ENGLISH
+📝 Source data is Chinese → Translate concepts to ENGLISH
+📝 Match MiniMax/Doubao benchmark quality
+📝 Run language checklist before git commit
+
 等待 4:15 AM Kimi Claw 自动唤醒...
 
 如果 Kimi Claw 未自动唤醒，请手动发送消息触发。
