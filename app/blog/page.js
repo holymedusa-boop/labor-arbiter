@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'stepfun-terminal-ai-revolution',
+    title: "StepFun's $7 Billion Bet: How China's AI Unicorn Is Winning the Terminal Race",
+    category: 'AI Infrastructure',
+    excerpt: 'With a record-breaking $700M funding round and former Megvii founder Yin Qi at the helm, StepFun is pioneering the shift from cloud AI to physical terminals. From 42 million smartphone deployments to AI-powered car cockpits.',
+    date: 'April 3, 2026',
+    readTime: '18 min read'
+  },
+  {
     slug: 'doubao-bytedance',
     title: 'ByteDance Doubao: The 200 Million User AI Assistant Reshaping Content Creation',
     category: 'AI Chatbots',
