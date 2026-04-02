@@ -3848,15 +3848,13 @@ This created a unique market dynamic:
 
 Xiaohongshu's algorithmic recommendation amplified the spread of AI thesis writing information:
 
-```
-User A shares "AI thesis writing guide" → 1,000+ likes
-    ↓
-Algorithm pushes to 10,000 stressed thesis writers
-    ↓
-500 try it and share their experiences
-    ↓
-Viral amplification loop...
-```
+    User A shares "AI thesis writing guide" → 1,000+ likes
+        ↓
+    Algorithm pushes to 10,000 stressed thesis writers
+        ↓
+    500 try it and share their experiences
+        ↓
+    Viral amplification loop...
 
 ## Deep Dive: The Six Major AI Writing Tools
 
@@ -3958,18 +3956,17 @@ Viral amplification loop...
 ### Step 1: Topic Selection & Framework (AI-Assisted)
 
 **Prompt Template:**
-```
-I am an undergraduate student majoring in [MAJOR], 
-wanting to write a thesis on [TOPIC].
 
-Please help me:
-1. Analyze the feasibility of this topic
-2. Provide 3 different research angles
-3. Design a detailed thesis outline (including chapter titles and key points for each section)
-4. Recommend 10 potential reference directions
-
-Requirements: Must conform to Chinese university undergraduate thesis standards
-```
+    I am an undergraduate student majoring in [MAJOR], 
+    wanting to write a thesis on [TOPIC].
+    
+    Please help me:
+    1. Analyze the feasibility of this topic
+    2. Provide 3 different research angles
+    3. Design a detailed thesis outline (including chapter titles and key points for each section)
+    4. Recommend 10 potential reference directions
+    
+    Requirements: Must conform to Chinese university undergraduate thesis standards
 
 **Kimi Test Results:**
 - Framework quality: Usable with minor adjustments
@@ -3982,20 +3979,18 @@ Requirements: Must conform to Chinese university undergraduate thesis standards
 
 **The Workflow:**
 
-```
-1. Collect papers (20-50 PDFs)
-        ↓
-2. Upload to Kimi/Claude
-        ↓
-3. AI generates:
-   - Topic-based literature mapping
-   - Comparison of different schools of thought
-   - Research gap identification
-        ↓
-4. Human verification and deepening
-        ↓
-5. Form review draft
-```
+    1. Collect papers (20-50 PDFs)
+            ↓
+    2. Upload to Kimi/Claude
+            ↓
+    3. AI generates:
+       - Topic-based literature mapping
+       - Comparison of different schools of thought
+       - Research gap identification
+            ↓
+    4. Human verification and deepening
+            ↓
+    5. Form review draft
 
 **Efficiency Gain:** From 3 days to 4-6 hours
 
