@@ -3856,6 +3856,9 @@ Xiaohongshu's algorithmic recommendation amplified the spread of AI thesis writi
         ↓
     Viral amplification loop...
 
+![Xiaohongshu AI Thesis Writing Trend](https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800&h=400&fit=crop)
+*Xiaohongshu users sharing AI thesis writing experiences and tips*
+
 ## Deep Dive: The Six Major AI Writing Tools
 
 ### Kimi: The Long-Text King
@@ -4036,6 +4039,9 @@ Xiaohongshu's algorithmic recommendation amplified the spread of AI thesis writi
 - Data accuracy verification
 - Chart standardization checking
 - Academic integrity declaration
+
+![AI Writing Workflow](https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&h=400&fit=crop)
+*The four-step workflow: From topic selection to final defense*
 
 ## The Red Line: Academic Integrity Boundaries
 
