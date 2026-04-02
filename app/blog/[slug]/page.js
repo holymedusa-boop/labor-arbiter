@@ -3756,7 +3756,7 @@ The companions aren't leaving. They're just getting more sophisticated.
     category: 'AI Chatbots',
     date: 'April 2, 2026',
     readTime: '16 min read',
-    heroImage: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&h=600&fit=crop',
+    heroImage: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=1200&h=600&fit=crop',
     content: `
 *Published: April 2, 2026 | Reading time: 16 minutes | Trending: 🔥🔥🔥🔥🔥*
 
