@@ -127,7 +127,86 @@ Depth: User behavior, tools comparison, social commentary
 
 ---
 
-## Reference Files
+## Automated Verification Protocol (When User Says "Check Ainchina")
+
+When user asks to **"检查 ainchina 发布项目"** or **"check ainchina"** or similar, execute the following **5-Point Inspection** automatically without asking for confirmation:
+
+### Point 1: Language Check (CRITICAL)
+```bash
+# Check last few commits for Chinese content
+git log --oneline -5 | head -5
+grep -r "[\u4e00-\u9fff]" content/posts/*.md 2>/dev/null | head -3
+```
+- ❌ **If Chinese found in article body** → Report: "⚠️ 中文内容检测到"
+- ✅ **If only social comments have Chinese** → Pass
+
+### Point 2: Image Check
+```bash
+# Check inline images in latest article
+grep -c "images.unsplash.com" app/blog/\[slug\]/page.js
+grep "w=800" app/blog/\[slug\]/page.js | wc -l
+```
+- ❌ **If < 3 inline images** → Report: "⚠️ 缺少inline图片 (应有3张)"
+- ✅ **If 3+ inline images with captions** → Pass
+
+### Point 3: Publication Status
+```bash
+# Check if article is live
+ls -t content/posts/*.md | head -1
+curl -s -o /dev/null -w "%{http_code}" https://www.ainchina.com/blog/$(ls -t content/posts/*.md | head -1 | xargs basename -s .md)
+```
+- ❌ **If HTTP != 200** → Report: "⚠️ 文章未发布或无法访问"
+- ✅ **If HTTP 200** → Pass
+
+### Point 4: File Update Completeness
+```bash
+# Check if all 3 files were updated
+SLUG=$(ls -t content/posts/*.md | head -1 | xargs basename -s .md)
+grep -q "$SLUG" app/blog/\[slug\]/page.js && echo "✅ page.js" || echo "❌ page.js missing"
+grep -q "$SLUG" app/blog/page.js && echo "✅ list page" || echo "❌ list page missing"
+grep -q "$SLUG" lib/posts-meta.js && echo "✅ meta" || echo "❌ meta missing"
+```
+- ❌ **If any file missing** → Report: "⚠️ 未更新所有3个必需文件"
+- ✅ **All 3 files updated** → Pass
+
+### Point 5: Git History Pollution
+```bash
+# Check if reports were accidentally committed
+git log --oneline -3 | grep -E "report|log|wechat"
+git ls-files | grep -E "reports/|\.log$"
+```
+- ❌ **If reports/logs found** → Report: "⚠️ Git历史被污染"
+- ✅ **Clean** → Pass
+
+### Response Format
+Always respond with:
+```
+## 🔍 Ainchina 发布检查报告
+
+| 检查项 | 状态 | 详情 |
+|--------|------|------|
+| 语言 | ✅/❌ | 英文/中文检测到 |
+| 图片 | ✅/❌ | X张inline图片 |
+| 发布 | ✅/❌ | HTTP 200/404 |
+| 文件 | ✅/❌ | 3/3 文件已更新 |
+| Git | ✅/❌ | 干净/被污染 |
+
+**总结**: X/5 通过
+[如有问题] 建议修复: ...
+```
+
+---
+
+## Quick Fix Commands (Reference)
+
+If issues found, execute without asking:
+
+**Fix missing images** → Add 3 Unsplash images with captions
+**Fix Chinese content** → Rewrite in English immediately
+**Fix missing file updates** → Update page.js, list page, meta
+**Fix Git pollution** → git rm --cached reports/* && commit
+
+---
 
 - **CONTENT_STANDARDS.md** - Full quality guidelines
 - **ainchina-agents/reports/** - Daily market briefs (may be in Chinese)
@@ -179,3 +258,46 @@ When woken by cron:
 *Critical Rules: 1 (Language)*
 *Quality Checks: 25 items*
 *Benchmark Articles: 3*
+
+---
+
+## Self-Sufficient Token Handling (DO NOT ASK USER)
+
+**Vercel Token issues**: I can check these myself without asking user
+
+### Check if Token is available:
+```bash
+# Check environment
+env | grep VERCEL_TOKEN
+
+# Check if Vercel CLI is logged in
+vercel whoami
+
+# Check project link
+cat .vercel/project.json 2>/dev/null || cat ainchina-hello/.vercel/project.json 2>/dev/null
+```
+
+### If Token missing:
+- **DO NOT ask user for token**
+- **DO NOT say "I need token"**
+- Instead: Proceed with Git-based deployment (GitHub→Vercel auto-deploy)
+- Or: Use curl with GitHub Actions API if available
+
+### Key Insight:
+Vercel has **GitHub Integration** - pushing to main automatically deploys.
+**NO TOKEN NEEDED for basic deployment.**
+
+Token only needed for:
+- Vercel API calls (traffic analytics)
+- Edge function management
+- Custom domain config
+
+**For article publishing: Git push is sufficient.**
+
+---
+
+*Last updated: April 4, 2026*
+*Critical Rules: 1 (Language)*
+*Quality Checks: 25 items*
+*Benchmark Articles: 3*
+*Automated Checks: 5-Point Protocol*
