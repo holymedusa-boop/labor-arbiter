@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'china-ai-digital-human-revolution',
+    title: "China's AI Digital Human Revolution: How 80,000 Virtual Avatars Are Reshaping the Creator Economy",
+    category: 'AI Applications',
+    excerpt: 'With 410 million Xiaohongshu views and Guiji AI\'s $440M IPO filing, China\'s AI digital human market is exploding. Analysis of HeyGen, Guiji, and the creator economy transformation.',
+    date: 'April 5, 2026',
+    readTime: '16 min read'
+  },
+  {
     slug: 'stepfun-terminal-ai-revolution',
     title: "StepFun's $7 Billion Bet: How China's AI Unicorn Is Winning the Terminal Race",
     category: 'AI Infrastructure',

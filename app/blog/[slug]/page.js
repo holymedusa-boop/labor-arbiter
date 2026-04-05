@@ -2,6 +2,11 @@ import Link from 'next/link'
 
 // SEO Metadata for each article
 const postMetadata = {
+  'china-ai-digital-human-revolution': {
+    metaTitle: "China's AI Digital Human Revolution: 80,000 Virtual Avatars Reshaping Content",
+    metaDescription: 'With 410 million Xiaohongshu views and Guiji AI\'s $440M IPO, China\'s digital human market is exploding. Analysis of HeyGen, Guiji, and the creator economy transformation.',
+    keywords: 'AI digital human, China AI avatar, Guiji AI, HeyGen, virtual influencer, AI live streaming, digital creator economy, silicon intelligence, AI digital twin, Xiaohongshu AI',
+  },
   'stepfun-terminal-ai-revolution': {
     metaTitle: "StepFun's $7 Billion Bet: China's AI Unicorn Winning the Terminal Race",
     metaDescription: 'With a record-breaking $700M funding round and Yin Qi at the helm, StepFun pioneers the shift from cloud AI to physical terminals. Analysis of 42M smartphone deployments and AI cockpits.',
