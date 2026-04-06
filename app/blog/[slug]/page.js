@@ -153,372 +153,194 @@ const posts = {
     date: 'April 7, 2026',
     readTime: '17 min read',
     heroImage: 'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop',
-    content: `
-<p>China's AI revolution is accelerating beyond predictions. According to OpenRouter data released April 6, 2026, Chinese AI models processed <strong>12.96 trillion tokens</strong> in the week of March 30–April 5—a staggering 31.48% week-over-week increase. For the fifth consecutive week, China's token consumption has exceeded the United States, which recorded 3.03 trillion tokens (just 0.76% growth).</p>
+    content: `China's AI revolution is accelerating beyond predictions. According to OpenRouter data released April 6, 2026, Chinese AI models processed **12.96 trillion tokens** in the week of March 30–April 5—a staggering 31.48% week-over-week increase. For the fifth consecutive week, China's token consumption has exceeded the United States, which recorded 3.03 trillion tokens (just 0.76% growth).
 
-<img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop" alt="AI data visualization" />
-<p><em>China's AI token consumption has grown exponentially, surpassing US models in early 2026 and maintaining dominance for five consecutive weeks.</em></p>
+![AI data visualization](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&h=400&fit=crop)
+*China's AI token consumption has grown exponentially, surpassing US models in early 2026 and maintaining dominance for five consecutive weeks.*
 
-<p>This isn't merely a statistical milestone. It represents a fundamental rebalancing of global AI power, driven by three converging forces: aggressive pricing strategies that make Chinese APIs 10–60x cheaper than American counterparts, a new generation of Gen Z founders building unicorn companies at unprecedented speed, and breakthrough hardware innovations like the F-TAC Hand robot that push the boundaries of embodied intelligence.</p>
+This isn't merely a statistical milestone. It represents a fundamental rebalancing of global AI power, driven by three converging forces: aggressive pricing strategies that make Chinese APIs 10–60x cheaper than American counterparts, a new generation of Gen Z founders building unicorn companies at unprecedented speed, and breakthrough hardware innovations like the F-TAC Hand robot that push the boundaries of embodied intelligence.
 
-<h2>Executive Summary: The Numbers Behind the Shift</h2>
+## Executive Summary: The Numbers Behind the Shift
 
-<table>
-<thead>
-<tr>
-<th>Metric</th>
-<th>China</th>
-<th>USA</th>
-<th>Global Total</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Weekly Tokens (Apr 5)</td>
-<td>12.96 trillion</td>
-<td>3.03 trillion</td>
-<td>27 trillion</td>
-</tr>
-<tr>
-<td>Week-over-Week Growth</td>
-<td>+31.48%</td>
-<td>+0.76%</td>
-<td>+18.9%</td>
-</tr>
-<tr>
-<td>Global Market Share</td>
-<td>48%</td>
-<td>11.2%</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>Consecutive Weeks Leading</td>
-<td>5 weeks</td>
-<td>—</td>
-<td>—</td>
-</tr>
-<tr>
-<td>Top 10 Models (China)</td>
-<td>6 models</td>
-<td>4 models</td>
-<td>10 models</td>
-</tr>
-</tbody>
-</table>
+| Metric | China | USA | Global Total |
+|--------|-------|-----|--------------|
+| Weekly Tokens (Apr 5) | 12.96 trillion | 3.03 trillion | 27 trillion |
+| Week-over-Week Growth | +31.48% | +0.76% | +18.9% |
+| Global Market Share | 48% | 11.2% | 100% |
+| Consecutive Weeks Leading | 5 weeks | — | — |
+| Top 10 Models (China) | 6 models | 4 models | 10 models |
 
-<p>The data, aggregated from OpenRouter—the world's largest AI model API platform serving over 400 models from 60+ providers—reveals a stark acceleration. Chinese models now account for nearly half of all global token consumption.</p>
+The data, aggregated from OpenRouter—the world's largest AI model API platform serving over 400 models from 60+ providers—reveals a stark acceleration. Chinese models now account for nearly half of all global token consumption.
 
-<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop" alt="Server infrastructure" />
-<p><em>The infrastructure supporting China's AI expansion spans cloud providers, edge devices, and embedded systems across the world's largest internet market.</em></p>
+![Server infrastructure](https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&h=400&fit=crop)
+*The infrastructure supporting China's AI expansion spans cloud providers, edge devices, and embedded systems across the world's largest internet market.*
 
-<h2>The Cost Revolution: Why Developers Are Switching</h2>
+## The Cost Revolution: Why Developers Are Switching
 
-<p>The driver behind this shift isn't mysterious. Chinese AI companies have engaged in aggressive price competition that has fundamentally altered the economics of AI development.</p>
+The driver behind this shift isn't mysterious. Chinese AI companies have engaged in aggressive price competition that has fundamentally altered the economics of AI development.
 
-<h3>Price Comparison: Input Tokens (per million)</h3>
-<table>
-<thead>
-<tr>
-<th>Model</th>
-<th>Provider</th>
-<th>Price (USD)</th>
-<th>vs GPT-4 Ratio</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DeepSeek V3.2</td>
-<td>DeepSeek</td>
-<td>$0.014</td>
-<td>1.4%</td>
-</tr>
-<tr>
-<td>MiniMax M2.5</td>
-<td>MiniMax</td>
-<td>$0.30</td>
-<td>3%</td>
-</tr>
-<tr>
-<td>Kimi K2.5</td>
-<td>Moonshot</td>
-<td>$0.42</td>
-<td>4.2%</td>
-</tr>
-<tr>
-<td>GPT-4</td>
-<td>OpenAI</td>
-<td>$10.00</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table>
+### Price Comparison: Input Tokens (per million)
 
-<p>The cost differential is staggering. A developer running a high-volume application on DeepSeek V3.2 pays <strong>98.5% less</strong> than they would using GPT-4 for input processing.</p>
+| Model | Provider | Price (USD) | vs GPT-4 Ratio |
+|-------|----------|-------------|----------------|
+| DeepSeek V3.2 | DeepSeek | $0.014 | 1.4% |
+| MiniMax M2.5 | MiniMax | $0.30 | 3% |
+| Kimi K2.5 | Moonshot | $0.42 | 4.2% |
+| GPT-4 | OpenAI | $10.00 | 100% |
 
-<h2>The Gen Z Revolution: Meet the New Guard</h2>
+The cost differential is staggering. A developer running a high-volume application on DeepSeek V3.2 pays **98.5% less** than they would using GPT-4 for input processing.
 
-<p>China's AI sector is experiencing an unprecedented wave of Gen Z entrepreneurship—founders under 26 who are building unicorn companies at speeds that defy traditional venture capital timelines.</p>
+## The Gen Z Revolution: Meet the New Guard
 
-<h3>Notable Gen Z AI Founders (2025–2026)</h3>
-<table>
-<thead>
-<tr>
-<th>Founder</th>
-<th>Age</th>
-<th>Company</th>
-<th>Funding</th>
-<th>Valuation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Carina Hong</td>
-<td>25</td>
-<td>Axiom</td>
-<td>$200M Series A</td>
-<td>$1.6B</td>
-</tr>
-<tr>
-<td>Guo Hangjiang</td>
-<td>22</td>
-<td>MiroFish</td>
-<td>$30M Seed</td>
-<td>$150M</td>
-</tr>
-<tr>
-<td>Chen Yuanpei</td>
-<td>26</td>
-<td>DexHand</td>
-<td>$280M total</td>
-<td>$1.2B</td>
-</tr>
-<tr>
-<td>Yang Fengyu</td>
-<td>25</td>
-<td>Youliqi</td>
-<td>$50M+</td>
-<td>$400M</td>
-</tr>
-</tbody>
-</table>
+China's AI sector is experiencing an unprecedented wave of Gen Z entrepreneurship—founders under 26 who are building unicorn companies at speeds that defy traditional venture capital timelines.
 
-<h3>Carina Hong and Axiom: Mathematics as Infrastructure</h3>
+### Notable Gen Z AI Founders (2025–2026)
 
-<p>The standout story is <strong>Carina Hong (洪乐潼)</strong>, the 25-year-old MIT graduate who founded Axiom in late 2024. Born in Guangzhou to working-class parents who never attended college, Hong demonstrated mathematical genius from an early age—completing MIT's mathematics and physics double major in just three years.</p>
+| Founder | Age | Company | Funding | Valuation |
+|---------|-----|---------|---------|-----------|
+| Carina Hong | 25 | Axiom | $200M Series A | $1.6B |
+| Guo Hangjiang | 22 | MiroFish | $30M Seed | $150M |
+| Chen Yuanpei | 26 | DexHand | $280M total | $1.2B |
+| Yang Fengyu | 25 | Youliqi | $50M+ | $400M |
 
-<p>Axiom's $200 million Series A in March 2026, valuing the company at $1.6 billion, made headlines globally. But the technology—"Verified AI" using formal mathematical proof—addresses AI's most fundamental weakness: hallucination.</p>
+### Carina Hong and Axiom: Mathematics as Infrastructure
 
-<p>In December 2025, Axiom's system achieved a perfect score on the Putnam Competition, widely considered the world's most difficult undergraduate mathematics contest. Only five human competitors have accomplished this in the competition's 85-year history.</p>
+The standout story is **Carina Hong (洪乐潼)**, the 25-year-old MIT graduate who founded Axiom in late 2024. Born in Guangzhou to working-class parents who never attended college, Hong demonstrated mathematical genius from an early age—completing MIT's mathematics and physics double major in just three years.
 
-<img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=400&fit=crop" alt="Mathematical visualization" />
-<p><em>Axiom's approach uses formal mathematical verification to eliminate AI hallucination—a breakthrough that attracted world-class mathematicians to join the 25-year-old founder's team.</em></p>
+Axiom's $200 million Series A in March 2026, valuing the company at $1.6 billion, made headlines globally. But the technology—"Verified AI" using formal mathematical proof—addresses AI's most fundamental weakness: hallucination.
 
-<h3>Guo Hangjiang: 10 Days to $30 Million</h3>
+In December 2025, Axiom's system achieved a perfect score on the Putnam Competition, widely considered the world's most difficult undergraduate mathematics contest. Only five human competitors have accomplished this in the competition's 85-year history.
 
-<p>While Hong represents the academic path, <strong>Guo Hangjiang (郭航江)</strong> embodies the builder archetype. The Beijing University of Posts and Telecommunications senior created MiroFish, an AI prediction engine, in just 10 days using "Vibe Coding"—orchestrating AI tools through natural language prompts.</p>
+![Mathematical visualization](https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=800&h=400&fit=crop)
+*Axiom's approach uses formal mathematical verification to eliminate AI hallucination—a breakthrough that attracted world-class mathematicians to join the 25-year-old founder's team.*
 
-<p>The project topped GitHub's global trending list, catching the attention of Chen Tianqiao (陈天桥), who invested $30 million—transforming Guo from intern to CEO overnight.</p>
+### Guo Hangjiang: 10 Days to $30 Million
 
-<h2>F-TAC Hand: The Hardware Breakthrough</h2>
+While Hong represents the academic path, **Guo Hangjiang (郭航江)** embodies the builder archetype. The Beijing University of Posts and Telecommunications senior created MiroFish, an AI prediction engine, in just 10 days using "Vibe Coding"—orchestrating AI tools through natural language prompts.
 
-<p>Beyond software, Chinese researchers achieved a significant hardware milestone. The F-TAC Hand (Full-hand Tactile-embedded Biomimetic Hand), developed by Peking University and Beijing Institute for General Artificial Intelligence, became the world's first robotic hand combining comprehensive high-resolution tactile sensing with complete motor functionality.</p>
+The project topped GitHub's global trending list, catching the attention of Chen Tianqiao (陈天桥), who invested $30 million—transforming Guo from intern to CEO overnight.
 
-<h3>F-TAC Hand Technical Specifications</h3>
-<table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Specification</th>
-<th>Human Hand</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Tactile Coverage</td>
-<td>70% of palm</td>
-<td>~100%</td>
-</tr>
-<tr>
-<td>Spatial Resolution</td>
-<td>0.1 mm</td>
-<td>~0.05 mm</td>
-</tr>
-<tr>
-<td>Sensor Density</td>
-<td>10,000 points/cm²</td>
-<td>~2,500 points/cm²</td>
-</tr>
-<tr>
-<td>Degrees of Freedom</td>
-<td>24</td>
-<td>24</td>
-</tr>
-<tr>
-<td>Success Rate</td>
-<td>100%</td>
-<td>~95%</td>
-</tr>
-</tbody>
-</table>
+## F-TAC Hand: The Hardware Breakthrough
 
-<p>Published in <em>Nature Machine Intelligence</em>, the research demonstrates how rich tactile feedback fundamentally transforms robotic capabilities. In 600 real-world trials, F-TAC Hand achieved perfect success rates where non-tactile alternatives failed nearly half the time.</p>
+Beyond software, Chinese researchers achieved a significant hardware milestone. The F-TAC Hand (Full-hand Tactile-embedded Biomimetic Hand), developed by Peking University and Beijing Institute for General Artificial Intelligence, became the world's first robotic hand combining comprehensive high-resolution tactile sensing with complete motor functionality.
 
-<h2>Model Performance: The Technical Reality</h2>
+### F-TAC Hand Technical Specifications
 
-<p>Chinese models have closed the performance gap with American counterparts to a degree that few predicted.</p>
+| Feature | Specification | Human Hand |
+|---------|---------------|------------|
+| Tactile Coverage | 70% of palm | ~100% |
+| Spatial Resolution | 0.1 mm | ~0.05 mm |
+| Sensor Density | 10,000 points/cm² | ~2,500 points/cm² |
+| Degrees of Freedom | 24 | 24 |
+| Success Rate | 100% | ~95% |
 
-<h3>OpenRouter Top Models by Weekly Token Volume</h3>
-<table>
-<thead>
-<tr>
-<th>Rank</th>
-<th>Model</th>
-<th>Provider</th>
-<th>Weekly Tokens</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>1</td>
-<td>MiMo-V2-Pro</td>
-<td>Xiaomi</td>
-<td>4.82 trillion</td>
-</tr>
-<tr>
-<td>2</td>
-<td>Step 3.5 Flash</td>
-<td>StepFun</td>
-<td>3.91 trillion</td>
-</tr>
-<tr>
-<td>3</td>
-<td>MiniMax M2.7</td>
-<td>MiniMax</td>
-<td>2.84 trillion</td>
-</tr>
-<tr>
-<td>4</td>
-<td>DeepSeek V3.2</td>
-<td>DeepSeek</td>
-<td>1.04 trillion</td>
-</tr>
-</tbody>
-</table>
+Published in *Nature Machine Intelligence*, the research demonstrates how rich tactile feedback fundamentally transforms robotic capabilities. In 600 real-world trials, F-TAC Hand achieved perfect success rates where non-tactile alternatives failed nearly half the time.
 
-<h2>Why This Matters: Global Implications</h2>
+## Model Performance: The Technical Reality
 
-<p>The token surge signals a structural shift in global AI competition with four major implications:</p>
+Chinese models have closed the performance gap with American counterparts to a degree that few predicted.
 
-<p><strong>1. The Democratization of AI Development</strong> — When API costs drop by 98%, the pool of potential AI developers expands dramatically. Startups in Southeast Asia, Africa, and Latin America can now build sophisticated applications.</p>
+### OpenRouter Top Models by Weekly Token Volume
 
-<p><strong>2. Open Source as Strategic Weapon</strong> — Chinese companies have embraced open-source model releases with strategic discipline. Qwen, DeepSeek, and MiniMax release competitive open weights that rival closed American systems.</p>
+| Rank | Model | Provider | Weekly Tokens |
+|------|-------|----------|---------------|
+| 1 | MiMo-V2-Pro | Xiaomi | 4.82 trillion |
+| 2 | Step 3.5 Flash | StepFun | 3.91 trillion |
+| 3 | MiniMax M2.7 | MiniMax | 2.84 trillion |
+| 4 | DeepSeek V3.2 | DeepSeek | 1.04 trillion |
 
-<p><strong>3. Enterprise Adoption Acceleration</strong> — Frost & Sullivan's analysis shows accelerating enterprise adoption. In H2 2025, Qwen captured 32.1% of enterprise daily token consumption—nearly doubling its H1 2025 share.</p>
+## Why This Matters: Global Implications
 
-<p><strong>4. The Rise of Agent-Centric Computing</strong> — OpenClaw ("Lobster") has emerged as a catalyst for token consumption growth, consuming over 600 billion tokens in a single week. Agent workflows consume tokens at industrial scale.</p>
+The token surge signals a structural shift in global AI competition with four major implications:
 
-<h2>Social Media Reactions</h2>
+**1. The Democratization of AI Development** — When API costs drop by 98%, the pool of potential AI developers expands dramatically. Startups in Southeast Asia, Africa, and Latin America can now build sophisticated applications.
 
-<div class="social-comment">
-<p><strong>Zhihu (知乎)</strong> — @科技观察员</p>
-<p>"看到31%增长数据时我都震惊了，这意味着我们的AI正在真正用起来，而不只是概念炒作。"</p>
-<p><em>"Seeing that 31% growth figure shocked me. It means our AI is actually being used, not just hype and concepts."</em> 👍 2,847</p>
-</div>
+**2. Open Source as Strategic Weapon** — Chinese companies have embraced open-source model releases with strategic discipline. Qwen, DeepSeek, and MiniMax release competitive open weights that rival closed American systems.
 
-<div class="social-comment">
-<p><strong>Xiaohongshu (小红书)</strong> — @AI产品经理阿文</p>
-<p>"DeepSeek的API价格让我能够做以前不敢想的项目。这不是简单的便宜，是生态级别的改变。"</p>
-<p><em>"DeepSeek's API pricing lets me build projects I never dared imagine before. This isn't just being cheap—it's ecosystem-level change."</em> ❤️ 4,231</p>
-</div>
+**3. Enterprise Adoption Acceleration** — Frost & Sullivan's analysis shows accelerating enterprise adoption. In H2 2025, Qwen captured 32.1% of enterprise daily token consumption—nearly doubling its H1 2025 share.
 
-<div class="social-comment">
-<p><strong>Twitter/X</strong> — @ai_researcher_guy</p>
-<p>Chinese models went from "cheap alternatives" to "default choice" in my pipeline in about 6 months. The price/perf ratio is just unbeatable now. 🔁 892</p>
-</div>
+**4. The Rise of Agent-Centric Computing** — OpenClaw ("Lobster") has emerged as a catalyst for token consumption growth, consuming over 600 billion tokens in a single week. Agent workflows consume tokens at industrial scale.
 
-<div class="social-comment">
-<p><strong>V2EX</strong> — @独立开发者</p>
-<p>"以前用GPT-4做实验心疼得要死，现在DeepSeek随便跑，还能微调。这才是AI民主化。"</p>
-<p><em>"I used to wince at every GPT-4 experiment. Now with DeepSeek, I can iterate freely and even fine-tune. This is what AI democratization actually looks like."</em> ⭐ 1,156</p>
-</div>
+## Social Media Reactions
 
-<div class="social-comment">
-<p><strong>Weibo (微博)</strong> — @互联网老炮儿</p>
-<p>"洪乐潼这种创始人太可怕了——顶级智商+顶级执行力+顶级资源调动能力。she's built different."</p>
-<p><em>"Founders like Carina Hong are terrifying—top-tier IQ + execution + resource mobilization. She's built different."</em> 👍 8,942</p>
-</div>
+> **Zhihu (知乎)** — @科技观察员
+> 
+> "看到31%增长数据时我都震惊了，这意味着我们的AI正在真正用起来，而不只是概念炒作。"
+> 
+> *"Seeing that 31% growth figure shocked me. It means our AI is actually being used, not just hype and concepts."* 👍 2,847
 
-<div class="social-comment">
-<p><strong>GitHub Discussions</strong> — @ml_engineer</p>
-<p>Just migrated our entire inference stack from GPT-4 to DeepSeek V3.2. Cost dropped 98%, latency improved 40%, and quality is comparable for our use case (code generation). Should have done this months ago. ⭐ 2,341</p>
-</div>
+> **Xiaohongshu (小红书)** — @AI产品经理阿文
+> 
+> "DeepSeek的API价格让我能够做以前不敢想的项目。这不是简单的便宜，是生态级别的改变。"
+> 
+> *"DeepSeek's API pricing lets me build projects I never dared imagine before. This isn't just being cheap—it's ecosystem-level change."* ❤️ 4,231
 
-<h2>Challenges and Counterarguments</h2>
+> **Twitter/X** — @ai_researcher_guy
+> 
+> Chinese models went from "cheap alternatives" to "default choice" in my pipeline in about 6 months. The price/perf ratio is just unbeatable now. 🔁 892
 
-<p>The surge isn't without skeptics:</p>
+> **V2EX** — @独立开发者
+> 
+> "以前用GPT-4做实验心疼得要死，现在DeepSeek随便跑，还能微调。这才是AI民主化。"
+> 
+> *"I used to wince at every GPT-4 experiment. Now with DeepSeek, I can iterate freely and even fine-tune. This is what AI democratization actually looks like."* ⭐ 1,156
 
-<p><strong>Quality vs. Quantity</strong> — Token volume doesn't guarantee superior capabilities. GPT-5 and Claude Opus still lead on certain reasoning benchmarks.</p>
+> **Weibo (微博)** — @互联网老炮儿
+> 
+> "洪乐潼这种创始人太可怕了——顶级智商+顶级执行力+顶级资源调动能力。she's built different."
+> 
+> *"Founders like Carina Hong are terrifying—top-tier IQ + execution + resource mobilization. She's built different."* 👍 8,942
 
-<p><strong>Sustainability Questions</strong> — Current pricing appears subsidized. Whether Chinese companies can maintain profitability remains unclear.</p>
+> **GitHub Discussions** — @ml_engineer
+> 
+> Just migrated our entire inference stack from GPT-4 to DeepSeek V3.2. Cost dropped 98%, latency improved 40%, and quality is comparable for our use case (code generation). Should have done this months ago. ⭐ 2,341
 
-<p><strong>Geopolitical Fragility</strong> — Export controls on advanced semiconductors continue constraining Chinese AI development.</p>
+## Challenges and Counterarguments
 
-<p><strong>Data Privacy Concerns</strong> — International developers using Chinese APIs face uncertain data governance compared to American providers with established compliance frameworks.</p>
+The surge isn't without skeptics:
 
-<h2>The Road Ahead: What's Next</h2>
+**Quality vs. Quantity** — Token volume doesn't guarantee superior capabilities. GPT-5 and Claude Opus still lead on certain reasoning benchmarks.
 
-<p>Industry analysts project continued divergence. JPMorgan forecasts China's AI inference token consumption growing from approximately 10 quadrillion (2025) to 3,900 quadrillion by 2030—a 370x expansion.</p>
+**Sustainability Questions** — Current pricing appears subsidized. Whether Chinese companies can maintain profitability remains unclear.
 
-<table>
-<thead>
-<tr>
-<th>Timeline</th>
-<th>Milestone</th>
-<th>Significance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Q2 2026</td>
-<td>First Chinese model to 20T weekly tokens</td>
-<td>Sustained growth rate</td>
-</tr>
-<tr>
-<td>2026</td>
-<td>Axiom commercial deployment</td>
-<td>Verified AI validation</td>
-</tr>
-<tr>
-<td>2027</td>
-<td>F-TAC Hand commercial production</td>
-<td>Hardware commercialization</td>
-</tr>
-<tr>
-<td>2027</td>
-<td>Gen Z-founded AI unicorn IPO</td>
-<td>New generation legitimacy</td>
-</tr>
-<tr>
-<td>2028</td>
-<td>China 50%+ global token share</td>
-<td>Market dominance</td>
-</tr>
-</tbody>
-</table>
+**Geopolitical Fragility** — Export controls on advanced semiconductors continue constraining Chinese AI development.
 
-<h2>Conclusion: A New Chapter</h2>
+**Data Privacy Concerns** — International developers using Chinese APIs face uncertain data governance compared to American providers with established compliance frameworks.
 
-<p>China's AI token surge represents something larger than market share statistics. It demonstrates that aggressive pricing, open-source distribution, and ecosystem building can reshape competitive landscapes faster than conventional wisdom predicted.</p>
+## The Road Ahead: What's Next
 
-<p>The Gen Z founders—Carina Hong proving mathematical theorems, Guo Hangjiang building prediction engines in days, Chen Yuanpei advancing robotic manipulation—signal that Chinese AI innovation isn't merely catching up. In certain dimensions, it's defining new paradigms.</p>
+Industry analysts project continued divergence. JPMorgan forecasts China's AI inference token consumption growing from approximately 10 quadrillion (2025) to 3,900 quadrillion by 2030—a 370x expansion.
 
-<p>For global developers, the implications are immediate and practical. The cost barrier to AI experimentation has collapsed. Applications previously uneconomical—real-time video analysis, autonomous coding agents, large-scale content generation—are now viable.</p>
+| Timeline | Milestone | Significance |
+|----------|-----------|--------------|
+| Q2 2026 | First Chinese model to 20T weekly tokens | Sustained growth rate |
+| 2026 | Axiom commercial deployment | Verified AI validation |
+| 2027 | F-TAC Hand commercial production | Hardware commercialization |
+| 2027 | Gen Z-founded AI unicorn IPO | New generation legitimacy |
+| 2028 | China 50%+ global token share | Market dominance |
 
-<p>The 12.96 trillion token week isn't an endpoint. It's an early indicator of how AI infrastructure globalizes when cost structures fundamentally change. The question for American AI leaders is no longer whether they can maintain technological superiority. It's whether they can match a pricing and ecosystem strategy that has already captured nearly half the world's AI computation.</p>
+## Conclusion: A New Chapter
 
-<div class="disclaimer">
-<p><strong>Disclaimer:</strong> This analysis is based on publicly available data from OpenRouter, company announcements, and media reports. Token statistics reflect platform-specific usage patterns and may not represent total global AI computation. Investment and technical decisions should incorporate additional due diligence.</p>
-</div>
+China's AI token surge represents something larger than market share statistics. It demonstrates that aggressive pricing, open-source distribution, and ecosystem building can reshape competitive landscapes faster than conventional wisdom predicted.
+
+The Gen Z founders—Carina Hong proving mathematical theorems, Guo Hangjiang building prediction engines in days, Chen Yuanpei advancing robotic manipulation—signal that Chinese AI innovation isn't merely catching up. In certain dimensions, it's defining new paradigms.
+
+For global developers, the implications are immediate and practical. The cost barrier to AI experimentation has collapsed. Applications previously uneconomical—real-time video analysis, autonomous coding agents, large-scale content generation—are now viable.
+
+The 12.96 trillion token week isn't an endpoint. It's an early indicator of how AI infrastructure globalizes when cost structures fundamentally change. The question for American AI leaders is no longer whether they can maintain technological superiority. It's whether they can match a pricing and ecosystem strategy that has already captured nearly half the world's AI computation.
+
+---
+
+**Disclaimer:** This analysis is based on publicly available data from OpenRouter, company announcements, and media reports. Token statistics reflect platform-specific usage patterns and may not represent total global AI computation. Investment and technical decisions should incorporate additional due diligence.
+
+---
+
+## Related Articles
+
+- [China's Embodied AI Revolution: $30B Q1 Funding Reshapes Robotics](./china-embodied-ai-revolution-2026)
+- [MiniMax: The 212 Million User AI Companion Empire](./minimax-talkie)
+- [ByteDance Doubao: The 200 Million User AI Assistant](./doubao-bytedance)
+- [DeepSeek-V3: The $5.6M Training Run](./deepseek-v3-deep-dive)
     `,
   },
   'china-embodied-ai-revolution-2026': {
