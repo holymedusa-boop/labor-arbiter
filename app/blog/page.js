@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'china-ai-token-surge-gen-z',
+    title: "China's AI Overtake: 31% Surge in Token Usage Signals Global Power Shift",
+    category: 'AI Trends',
+    excerpt: "Chinese AI models hit 12.96 trillion weekly tokens, surpassing US for 5 consecutive weeks. Inside the Gen Z revolution, $2B unicorn startups, and F-TAC Hand robotics breakthrough.",
+    date: 'April 7, 2026',
+    readTime: '17 min read'
+  },
+  {
     slug: 'china-embodied-ai-revolution-2026',
     title: "China's Embodied AI Revolution: How $30 Billion in Q1 Funding Is Reshaping Global Robotics",
     category: 'AI Trends',
