@@ -2,6 +2,14 @@ import Link from 'next/link'
 
 const posts = [
   {
+    slug: 'china-embodied-ai-revolution-2026',
+    title: "China's Embodied AI Revolution: How $30 Billion in Q1 Funding Is Reshaping Global Robotics",
+    category: 'AI Trends',
+    excerpt: "China's embodied intelligence sector raised $30 billion in Q1 2026 alone, creating 9 unicorn companies valued at $10B+. From Zhi Robotics' Tesla-like approach to Autobot's Big Tech backing, discover how China is winning the physical AI race.",
+    date: 'April 6, 2026',
+    readTime: '17 min read'
+  },
+  {
     slug: 'china-ai-avatar-revolution-2025',
     title: "China's AI Avatar Revolution: How 410 Million Views Transformed Content Creation Forever",
     category: 'AI Trends',
