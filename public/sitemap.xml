@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Generated: 2026-04-09T00:09:27.603Z -->
-  <!-- Total Posts: 16 -->
+  <!-- Generated: 2026-04-09T00:20:29.620Z -->
+  <!-- Total Posts: 17 -->
 
   <!-- Homepage -->
   <url>
@@ -36,6 +36,20 @@
     <priority>0.3</priority>
   </url>
 
+  <!-- AI Applications -->
+  <url>
+    <loc>https://www.ainchina.com/blog/ai-interview-coaching-china-2025</loc>
+    <lastmod>2026-04-08</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.ainchina.com/blog/china-ai-digital-human-revolution</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
   <!-- AI Trends -->
   <url>
     <loc>https://www.ainchina.com/blog/china-ai-token-surge-gen-z</loc>
@@ -51,14 +65,6 @@
   </url>
   <url>
     <loc>https://www.ainchina.com/blog/china-ai-avatar-revolution-2025</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <!-- AI Applications -->
-  <url>
-    <loc>https://www.ainchina.com/blog/china-ai-digital-human-revolution</loc>
     <lastmod>2026-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
