@@ -10,6 +10,14 @@ const posts = [
     readTime: '16 min read'
   },
   {
+    slug: 'china-ai-token-surge-31-percent-april-2026',
+    title: "China's AI Overtake: 31% Surge in Token Usage Signals Global Power Shift",
+    category: 'AI Industry Analysis',
+    excerpt: 'Chinese AI models just surpassed American rivals for the fifth consecutive week with a 31.48% surge. Meanwhile, Gen Z founders are reshaping the venture landscape with billion-dollar valuations.',
+    date: 'April 7, 2026',
+    readTime: '16 min read'
+  },
+  {
     slug: 'china-ai-token-surge-gen-z',
     title: "China's AI Overtake: 31% Surge in Token Usage Signals Global Power Shift",
     category: 'AI Trends',
