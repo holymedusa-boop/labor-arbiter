@@ -8,7 +8,7 @@ image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=600&f
 keywords: ["AI interview coaching", "China AI job market", "Kimi AI", "Doubao", "Tongyi Qianwen", "Chinese graduates employment", "AI career tools"]
 ---
 
-![AI Interview Coaching in China](/images/ai-interview-coach-china.png)
+![AI Interview Coaching in China](https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=600&fit=crop)
 
 ## Executive Summary
 
