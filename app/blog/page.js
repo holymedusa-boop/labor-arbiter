@@ -1,5 +1,6 @@
 import Link from 'next/link'
 
+// Blog posts list - updated April 9, 2026
 const posts = [
   {
     slug: 'ai-interview-coaching-china-2025',
