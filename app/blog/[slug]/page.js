@@ -152,8 +152,6 @@ export async function generateMetadata({ params }) {
 }
 
 const posts = {
-*This article was published on April 8, 2026. For corrections or inquiries, contact research@ain-china.com*`,
-  },
   'china-ai-token-surge-gen-z': {
     title: "China's AI Overtake: 31% Surge in Token Usage Signals Global Power Shift",
     category: 'AI Trends',
