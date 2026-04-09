@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Generated: 2026-04-09T00:20:29.620Z -->
-  <!-- Total Posts: 17 -->
+  <!-- Generated: 2026-04-09T00:30:42.601Z -->
+  <!-- Total Posts: 18 -->
 
   <!-- Homepage -->
   <url>
@@ -48,6 +48,14 @@
     <lastmod>2026-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+  </url>
+
+  <!-- AI Industry Analysis -->
+  <url>
+    <loc>https://www.ainchina.com/blog/china-ai-token-surge-31-percent-april-2026</loc>
+    <lastmod>2026-04-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
 
   <!-- AI Trends -->
