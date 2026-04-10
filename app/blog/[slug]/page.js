@@ -2,6 +2,11 @@ import Link from 'next/link'
 
 // SEO Metadata for each article
 const postMetadata = {
+  'modelbest-edge-ai-unicorn-2026': {
+    metaTitle: "ModelBest Becomes Unicorn: Tsinghua's Edge AI Pioneer Reshaping On-Device Intelligence",
+    metaDescription: "Inside ModelBest's rise to unicorn status with $150M+ raised in 2026. How the 'Density Law' approach challenges AI giants in edge computing, with 24M+ MiniCPM downloads.",
+    keywords: 'ModelBest, MiniCPM, edge AI, on-device AI, Tsinghua AI, unicorn, density law, Shenzhen Capital Group, Huichuan Technology',
+  },
   'china-ai-token-surge-gen-z': {
     metaTitle: "China's AI Overtake: 31% Token Surge Signals Global Power Shift",
     metaDescription: 'Chinese AI models hit 12.96 trillion weekly tokens, surpassing US for 5 consecutive weeks. Inside the Gen Z revolution, $2B unicorn startups, and F-TAC Hand robotics breakthrough.',

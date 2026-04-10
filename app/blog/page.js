@@ -1,7 +1,15 @@
 import Link from 'next/link'
 
-// Blog posts list - updated April 9, 2026
+// Blog posts list - updated April 10, 2026
 const posts = [
+  {
+    slug: 'modelbest-edge-ai-unicorn-2026',
+    title: "ModelBest Becomes Unicorn: How Tsinghua's Edge AI Pioneer Is Reshaping On-Device Intelligence",
+    category: 'AI Trends',
+    excerpt: "Inside ModelBest's rise to unicorn status: How a Tsinghua-born startup is challenging AI giants with its 'Density Law' approach to edge AI, securing $100M+ in 2026.",
+    date: 'April 10, 2026',
+    readTime: '17 min read'
+  },
   {
     slug: 'ai-interview-coaching-china-2025',
     title: 'The AI Interview Coach Phenomenon: How Chinese Graduates Are Using AI to Crack the Job Market',
