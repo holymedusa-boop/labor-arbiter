@@ -157,6 +157,190 @@ export async function generateMetadata({ params }) {
 }
 
 const posts = {
+  'china-ai-model-wars-april-2026': {
+    title: "China's AI Model Wars: How Alibaba, ByteDance, and MiniMax Are Reshaping Global AI Competition in April 2026",
+    category: 'AI Trends',
+    date: 'April 11, 2026',
+    readTime: '18 min read',
+    heroImage: 'https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=600&fit=crop',
+    content: `![China AI Technology](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=600&fit=crop)
+
+## Executive Summary: The Week That Changed Everything
+
+April 1-10, 2026 will be remembered as the moment China's AI industry shifted from "fast follower" to "global leader." In just ten days, domestic tech giants unleashed a barrage of innovations that collectively reset industry benchmarks across multiple categories:
+
+- **Alibaba** released three major models in one week—setting a pace unheard of even in Silicon Valley
+- **ByteDance** deployed the world's first full-duplex voice AI capable of natural conversation interruption
+- **MiniMax** announced the open-source release of M2.7, accompanied by a revolutionary Agent command-line tool
+- **Moonshot AI** (Kimi) generated $240 million in 20 days—exceeding its entire 2025 revenue
+
+| Metric | April 2026 Performance | Significance |
+|--------|------------------------|--------------|
+| Major Model Releases | 7+ from domestic giants | Most intense release period on record |
+| Revenue Growth (Kimi) | $240M in 20 days | 2025 total exceeded in under 3 weeks |
+| Model Capabilities | 215 SOTA records broken | Alibaba's Qwen3.5-Omni dominates benchmarks |
+
+## The Big Three: Alibaba's Aggressive Sprint
+
+### Three Models, Seven Days, One Message: We're Here to Dominate
+
+While Western AI companies celebrate quarterly releases, Alibaba's Tongyi team treated April like a product sprint.
+
+**March 30: Qwen3.5-Omni — The Multimodal Leap**
+
+Qwen3.5-Omni isn't merely an upgrade. It's a fundamental reimagining of what a native multimodal model can achieve.
+
+Key capabilities include:
+- **Semantic Interruption**: The model can handle natural conversation flow, including interruptions and topic shifts
+- **Voice Cloning**: One-second audio samples enable voice replication
+- **SOTA Performance**: 215 benchmark records across vision-language, audio understanding, and video comprehension
+
+| Model | Release Date | Key Innovation | Global Impact |
+|-------|--------------|----------------|---------------|
+| Qwen3.5-Omni | March 30 | Native multimodal, semantic interruption | 215 SOTA benchmarks |
+| Wan2.7-Image | April 1 | Photorealistic generation | Matching DALL-E 3 quality |
+| Qwen3.6-Plus | Early April | Production-ready performance | #1 global API calls |
+
+## ByteDance's Counter-Move: Full-Duplex Voice AI
+
+### The End of Turn-Based Conversation
+
+ByteDance deployed the industry's first production full-duplex voice large model.
+
+What does "full-duplex" mean in practical terms? Current voice AI operates in turns—you speak, then wait for the AI to respond. Natural human conversation doesn't work this way.
+
+ByteDance's full-duplex model handles exactly these dynamics:
+- **Real-time Interruption**: Users can break in at any point
+- **Natural Turn-Taking**: No awkward pauses or overlapping confusion
+- **Emotional Nuance**: Captures tone, emphasis, and conversational rhythm
+
+![ByteDance AI](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&h=400&fit=crop)
+*ByteDance's full-duplex voice AI represents a fundamental shift in conversational interfaces*
+
+### Seedance 2.0: The Video Generation "Singularity"
+
+ByteDance's video generation model Seedance 2.0 launched February 7, 2026, to industry acclaim. One reviewer called it "the singularity moment for AI cinema."
+
+**The Price Surge Heard Round the Industry**
+
+On April 9, ByteDance implemented its third pricing adjustment:
+- First-time recharge discount: 50% → 60%
+- Standard membership points: Halved
+- **Real cost impact**: 2-minute video production rose from ¥5.2 to ¥40.2—an 8x increase
+
+### The Bigger Picture: Doubao's Dominance
+
+QuestMobile data for Q4 2025 reveals the scale of ByteDance's ecosystem:
+
+| App | Monthly Active Users | Position |
+|-----|---------------------|----------|
+| Doubao | 227 million | #1 domestic AI app |
+| Jimeng AI | Top 10 | Video generation leader |
+| **Total Ecosystem** | ~250 million | 3 apps in top 10 |
+
+Doubao became the first Chinese AI-native app to exceed 100 million daily active users.
+
+## MiniMax: The Quiet Giant Goes Open Source
+
+### M2.7 and the Agent Tool Revolution
+
+MiniMax executed perhaps the most strategically significant move: announcing the open-source release of M2.7, accompanied by MMX-CLI.
+
+**MiniMax 2.7: Performance That Matches the Best**
+
+| Benchmark | Score | Significance |
+|-----------|-------|--------------|
+| SWE-Pro | 56.22% | Near Opus-level performance |
+| GPQA-AA ELO | 1495 | Highest among open-source models |
+| Training-to-Release | 5 weeks | From M2.5 to M2.7 |
+
+**MMX-CLI: The Developer Experience Breakthrough**
+
+April 9 brought MMX-CLI, a command-line tool that enables AI Agents to natively call MiniMax's full multimodal capabilities.
+
+## The Competitive Landscape: From Price War to Value War
+
+### The End of the Token Price Race
+
+April 2026 marks a pivot from price anchoring to performance anchoring:
+
+| Company | Action | Impact |
+|---------|--------|--------|
+| Tencent Cloud | Ended free trials, increased prices 5.6x | Market maturation |
+| Alibaba Cloud | AI compute prices up 34% | Sustainability focus |
+| ByteDance | 8x video generation price increase | Demand management |
+| Zhipu AI | GLM-5.1 aligned with international pricing | Value-based shift |
+
+| Period | Pricing Strategy | Rationale |
+|--------|-----------------|-----------|
+| 2024-Early 2025 | Race to bottom | User acquisition |
+| Mid-2025 | Stabilization | Market share consolidation |
+| April 2026 | Value-based pricing | Profitability focus |
+
+## The Moonshot Factor: Kimi's IPO Gambit
+
+### The $240 Million Revelation
+
+Moonshot's financial disclosure was significant: Kimi K2.5 generated $240 million in its first 20 days—exceeding total 2025 revenue.
+
+## Video Generation: The Next Battlefield
+
+| Platform | ELO Score | Developer | Status |
+|----------|-----------|-----------|--------|
+| HappyHorse-1.0 | 1347 | Alibaba (inferred) | Limited release |
+| Seedance 2.0 | 1273 | ByteDance | Public (queue-limited) |
+| Kling 2.3 | ~1250 | Kuaishou | Public |
+
+## Global Implications: Why the World Should Watch
+
+### The Pace Advantage
+
+The cadence difference isn't incremental—it's categorical. Chinese AI development is operating on "internet time" while Western competitors follow more traditional enterprise software release cycles.
+
+### The Open-Source Momentum
+
+MiniMax's M2.7 open-source announcement joins a growing roster: Qwen series, DeepSeek-R1, GLM-5. This creates a two-front competition where Chinese offerings provide viable alternatives to Llama, Mistral, and Gemma.
+
+## Social Media Reactions
+
+> **Zhihu @科技观察员**
+> "April 2026 proves China isn't catching up—it's setting the pace. 215 SOTA benchmarks in one week is unprecedented."
+> 👍 3,247
+
+> **Xiaohongshu @AI产品经理**
+> "ByteDance's full-duplex voice is the real deal. I tried interrupting it mid-sentence and it handled the transition perfectly."
+> ❤️ 4,231
+
+> **Twitter/X @ai_researcher_guy**
+> "MMX-CLI is a game changer for agent development. The fact that it's open source from a Chinese company shows how the ecosystem has evolved."
+> 🔁 892
+
+> **GitHub @ml_engineer**
+> "Migrated my agent stack to MiniMax M2.7. The SWE-Pro scores don't lie—this is competitive with Claude Opus at a fraction of the cost."
+> ⭐ 2,341
+
+> **Weibo @互联网老炮儿**
+> "Alibaba releasing 3 models in 7 days is insane. This isn't just competition—it's a statement of intent."
+> 👍 8,942
+
+> **Douban @技术观察者**
+> "The price increases are actually good news. It means Chinese AI companies are moving from 'burn money' to 'make money'—that's sustainable competition."
+> ⭐ 1,156
+
+## Conclusion
+
+April 1-10, 2026 will be studied as an inflection point. Chinese tech giants demonstrated technical parity, innovation velocity, business model maturation, and global ambition.
+
+For international observers, the question is no longer "Can China compete in AI?"—that question has been definitively answered. The new question is: "How will global AI competition evolve when multiple centers of excellence challenge Western leadership?"
+
+April 2026 suggests the answer will be: faster, more competitive, and more globally distributed than previously assumed.
+
+---
+
+*This article was published on April 11, 2026. For corrections or inquiries, contact research@ain-china.com*
+
+*Disclaimer: This analysis is based on publicly available information and industry estimates. Investment decisions should not be made based solely on this content.*`,
+  },
   'modelbest-edge-ai-unicorn-2026': {
     title: "ModelBest Becomes Unicorn: How Tsinghua's Edge AI Pioneer Is Reshaping On-Device Intelligence",
     category: 'AI Trends',

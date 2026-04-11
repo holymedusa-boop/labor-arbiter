@@ -1,7 +1,15 @@
 import Link from 'next/link'
 
-// Blog posts list - updated April 10, 2026
+// Blog posts list - updated April 11, 2026
 const posts = [
+  {
+    slug: 'china-ai-model-wars-april-2026',
+    title: "China's AI Model Wars: How Alibaba, ByteDance, and MiniMax Are Reshaping Global AI Competition in April 2026",
+    category: 'AI Trends',
+    excerpt: "April 2026 marks a turning point in China's AI race. Alibaba launched 3 models in one week, ByteDance deployed full-duplex voice AI, and MiniMax announced open-source M2.7. Discover how Chinese tech giants are outpacing Western competitors.",
+    date: 'April 11, 2026',
+    readTime: '18 min read'
+  },
   {
     slug: 'modelbest-edge-ai-unicorn-2026',
     title: "ModelBest Becomes Unicorn: How Tsinghua's Edge AI Pioneer Is Reshaping On-Device Intelligence",
