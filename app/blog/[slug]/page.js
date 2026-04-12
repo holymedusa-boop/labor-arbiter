@@ -508,6 +508,7 @@ The chip war was supposed to slow China down. Instead, it may have accelerated t
 ---
 
 *Disclaimer: This article is for informational purposes only. Market data is based on publicly available information and industry estimates. Investment decisions should not be made based solely on this content.*
+  `,
   },
   'china-ai-model-wars-april-2026': {
     title: "China's AI Model Wars: How Alibaba, ByteDance, and MiniMax Are Reshaping Global AI Competition in April 2026",
