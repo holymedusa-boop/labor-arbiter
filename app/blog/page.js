@@ -3,6 +3,14 @@ import Link from 'next/link'
 // Blog posts list - updated April 13, 2026
 const posts = [
   {
+    slug: 'china-ai-agent-explosion-2025-enterprise-deployment',
+    title: "China's AI Agent Explosion: How 126 Platforms and $1B+ in Enterprise Deals Are Reshaping Global Automation",
+    category: 'AI Trends',
+    excerpt: "With 371 government-contracted projects in H1 2025 alone, China's AI Agent market is hitting an inflection point. From JD.com's 7,000+ deployed agents to Alibaba serving 100,000+ factories, we dive deep into the $5B+ ecosystem.",
+    date: 'April 15, 2026',
+    readTime: '16 min read'
+  },
+  {
     slug: 'bytedance-seed-brain-drain-70-engineers',
     title: "ByteDance's AI Brain Drain: 70 Top Engineers Exit Seed Team in 12 Months",
     category: 'AI Trends',

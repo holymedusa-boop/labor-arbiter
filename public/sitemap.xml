@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Generated: 2026-04-14T13:39:53.791Z -->
-  <!-- Total Posts: 22 -->
+  <!-- Generated: 2026-04-14T22:38:11.881Z -->
+  <!-- Total Posts: 23 -->
 
   <!-- Homepage -->
   <url>
@@ -37,6 +37,12 @@
   </url>
 
   <!-- AI Trends -->
+  <url>
+    <loc>https://www.ainchina.com/blog/china-ai-agent-explosion-2025-enterprise-deployment</loc>
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://www.ainchina.com/blog/bytedance-seed-brain-drain-70-engineers</loc>
     <lastmod>2026-04-14</lastmod>

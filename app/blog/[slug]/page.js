@@ -2,6 +2,11 @@ import Link from 'next/link'
 
 // SEO Metadata for each article
 const postMetadata = {
+  'china-ai-agent-explosion-2025-enterprise-deployment': {
+    metaTitle: "China's AI Agent Explosion: 126 Platforms, $1B+ Enterprise Deals Reshaping Automation",
+    metaDescription: "With 371 government-contracted projects in H1 2025, China's AI Agent market hits an inflection point. From JD.com's 7,000+ agents to Alibaba's 100,000+ factory clients.",
+    keywords: 'China AI Agent, enterprise AI automation, JD Cloud agents, Alibaba International AI, Zhipu AutoGLM, Moonshot Kimi agents, AI Agent platforms, China enterprise AI, intelligent automation, AI procurement China',
+  },
   'bytedance-seed-brain-drain-70-engineers': {
     metaTitle: "ByteDance's AI Brain Drain: 70 Top Engineers Exit Seed Team in 12 Months",
     metaDescription: "ByteDance is bleeding AI talent. Nearly 70 core engineers walked out of its prestigious Seed AI team in 12 months—most joining Tencent. Inside China's ruthless AI talent wars.",
