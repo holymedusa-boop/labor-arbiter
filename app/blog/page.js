@@ -196,167 +196,76 @@ const posts = [
   }
 ]
 
-// Categories with their colors for dark theme
+// Categories with their colors
 const categories = {
-  'AI Trends': { bg: 'rgba(59, 130, 246, 0.2)', text: '#60a5fa', border: 'rgba(59, 130, 246, 0.3)' },
-  'AI Infrastructure': { bg: 'rgba(139, 92, 246, 0.2)', text: '#a78bfa', border: 'rgba(139, 92, 246, 0.3)' },
-  'AI Applications': { bg: 'rgba(34, 197, 94, 0.2)', text: '#4ade80', border: 'rgba(34, 197, 94, 0.3)' },
-  'AI Chatbots': { bg: 'rgba(249, 115, 22, 0.2)', text: '#fb923c', border: 'rgba(249, 115, 22, 0.3)' },
-  'Market Intelligence': { bg: 'rgba(236, 72, 153, 0.2)', text: '#f472b6', border: 'rgba(236, 72, 153, 0.3)' },
-  'Technical Analysis': { bg: 'rgba(99, 102, 241, 0.2)', text: '#818cf8', border: 'rgba(99, 102, 241, 0.3)' },
-  'AI Video': { bg: 'rgba(239, 68, 68, 0.2)', text: '#f87171', border: 'rgba(239, 68, 68, 0.3)' }
+  'AI Trends': 'bg-blue-100 text-blue-800',
+  'AI Infrastructure': 'bg-purple-100 text-purple-800',
+  'AI Applications': 'bg-green-100 text-green-800',
+  'AI Chatbots': 'bg-orange-100 text-orange-800',
+  'Market Intelligence': 'bg-pink-100 text-pink-800',
+  'Technical Analysis': 'bg-indigo-100 text-indigo-800',
+  'AI Video': 'bg-red-100 text-red-800'
 }
 
 export default function BlogPage() {
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: '#0a0a0a', color: '#e5e5e5' }}>
+    <main className="min-h-screen bg-gray-50">
       {/* Header */}
-      <div style={{ 
-        backgroundColor: 'rgba(10, 10, 10, 0.8)', 
-        backdropFilter: 'blur(10px)',
-        borderBottom: '1px solid #1a1a1a',
-        position: 'sticky',
-        top: 0,
-        zIndex: 100
-      }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px 24px' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+      <div className="bg-white shadow-sm">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex items-center gap-4">
             <Link 
               href="/"
-              style={{ 
-                color: '#a3a3a3', 
-                textDecoration: 'none',
-                fontSize: '15px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px'
-              }}
+              className="text-gray-600 hover:text-gray-900 transition-colors"
             >
               ← Back to Home
             </Link>
           </div>
-          <h1 style={{ 
-            fontSize: '36px', 
-            fontWeight: 700, 
-            marginTop: '16px',
-            marginBottom: '8px',
-            background: 'linear-gradient(135deg, #22d3ee, #8b5cf6)',
-            WebkitBackgroundClip: 'text',
-            WebkitTextFillColor: 'transparent'
-          }}>
+          <h1 className="text-4xl font-bold text-gray-900 mt-4 mb-2">
             AI in China Blog
           </h1>
-          <p style={{ fontSize: '16px', color: '#737373' }}>
+          <p className="text-lg text-gray-600">
             Deep insights into China's AI revolution — trends, companies, and market intelligence
           </p>
         </div>
       </div>
 
       {/* Blog Posts Grid */}
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '40px 24px' }}>
-        <div style={{ 
-          display: 'grid', 
-          gap: '24px', 
-          gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))'
-        }}>
-          {posts.map((post) => {
-            const catStyle = categories[post.category] || categories['AI Trends']
-            return (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                style={{ 
-                  textDecoration: 'none',
-                  display: 'block'
-                }}
-              >
-                <div style={{
-                  backgroundColor: '#111',
-                  borderRadius: '12px',
-                  border: '1px solid #1a1a1a',
-                  overflow: 'hidden',
-                  transition: 'all 0.2s ease',
-                  height: '100%',
-                  display: 'flex',
-                  flexDirection: 'column'
-                }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = '#333'
-                  e.currentTarget.style.transform = 'translateY(-2px)'
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = '#1a1a1a'
-                  e.currentTarget.style.transform = 'translateY(0)'
-                }}
-                >
-                  <div style={{ padding: '24px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                    {/* Category Badge */}
-                    <span style={{
-                      display: 'inline-block',
-                      padding: '6px 12px',
-                      borderRadius: '20px',
-                      fontSize: '12px',
-                      fontWeight: 500,
-                      marginBottom: '16px',
-                      width: 'fit-content',
-                      backgroundColor: catStyle.bg,
-                      color: catStyle.text,
-                      border: `1px solid ${catStyle.border}`
-                    }}>
-                      {post.category}
-                    </span>
-                    
-                    {/* Title */}
-                    <h2 style={{
-                      fontSize: '18px',
-                      fontWeight: 600,
-                      color: '#e5e5e5',
-                      marginBottom: '12px',
-                      lineHeight: 1.4,
-                      transition: 'color 0.2s ease'
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.color = '#60a5fa'
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.color = '#e5e5e5'
-                    }}
-                    >
-                      {post.title}
-                    </h2>
-                    
-                    {/* Excerpt */}
-                    <p style={{
-                      fontSize: '14px',
-                      color: '#737373',
-                      lineHeight: 1.6,
-                      marginBottom: '16px',
-                      flex: 1
-                    }}>
-                      {post.excerpt}
-                    </p>
-                    
-                    {/* Meta */}
-                    <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '8px',
-                      fontSize: '13px',
-                      color: '#525252',
-                      paddingTop: '16px',
-                      borderTop: '1px solid #1a1a1a'
-                    }}>
-                      <span>{post.date}</span>
-                      <span>•</span>
-                      <span>{post.readTime}</span>
-                    </div>
-                  </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {posts.map((post) => (
+            <Link
+              key={post.slug}
+              href={`/blog/${post.slug}`}
+              className="group bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden flex flex-col"
+            >
+              <div className="p-6 flex-1 flex flex-col">
+                {/* Category Badge */}
+                <span className={`inline-block px-3 py-1 rounded-full text-sm font-medium mb-3 w-fit ${categories[post.category]}`}>
+                  {post.category}
+                </span>
+                
+                {/* Title */}
+                <h2 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden'}}>
+                  {post.title}
+                </h2>
+                
+                {/* Excerpt */}
+                <p className="text-gray-600 mb-4 flex-1" style={{display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden'}}>
+                  {post.excerpt}
+                </p>
+                
+                {/* Meta */}
+                <div className="flex items-center text-sm text-gray-500 mt-auto pt-4 border-t border-gray-100">
+                  <span>{post.date}</span>
+                  <span className="mx-2">•</span>
+                  <span>{post.readTime}</span>
                 </div>
-              </Link>
-            )
-          })}
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
-    </div>
+    </main>
   )
 }
