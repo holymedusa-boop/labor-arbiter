@@ -1,0 +1,39 @@
+{
+  "date": "2026-04-19",
+  "status": "success",
+  "article": {
+    "title": "中国AI视频生成爆发：从烧钱到印钞的产业化拐点",
+    "path": "content/2026-04-19-ai-video-commercialization.md",
+    "word_count": 4164,
+    "reading_time": "15分钟",
+    "topics": ["AI视频生成", "商业化", "可灵", "海螺", "Seedance"]
+  },
+  "deployments": {
+    "git": {
+      "commit": "6a2072d",
+      "status": "pushed to main"
+    },
+    "vercel": {
+      "production_url": "https://ainchina-agents-3kintglm1-holymedusa-boops-projects.vercel.app",
+      "alias": "https://ainchina-agents.vercel.app",
+      "status": "deployed"
+    }
+  },
+  "data_sources": {
+    "market_brief": "market-brief-2026-04-18.json",
+    "kimi_search": [
+      "中国AI公司 2025年4月 最新动态",
+      "字节跳动 阿里巴巴 百度 腾讯 AI大模型",
+      "AI视频生成 可灵 Kling 海螺"
+    ]
+  },
+  "key_highlights": [
+    "快手可灵4-5月月付费金额超1亿元人民币",
+    "MiniMax海螺2025年前九个月营收增长超7倍",
+    "字节Seedance 2.0 API全面开放，定价1元/秒",
+    "腾讯混元T1正式版发布，采用Hybrid-Mamba-Transformer架构",
+    "中国AI视频生成市场占比超30%（Poe平台数据）"
+  ],
+  "agent": "kimi-claw",
+  "execution_time": "2026-04-19T04:20:00+08:00"
+}
