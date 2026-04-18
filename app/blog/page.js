@@ -1,7 +1,15 @@
 import Link from 'next/link'
 
-// Blog posts list - updated April 16, 2026
+// Blog posts list - updated April 18, 2026
 const posts = [
+  {
+    slug: 'china-ai-avatar-revolution-2026',
+    title: "China's AI Avatar Revolution: How 410 Million Views Signal a Global Content Creation Shift",
+    category: 'AI Applications',
+    excerpt: "Chinese AI avatar tools are experiencing explosive growth with 410 million topic views and 200% weekly growth. From HeyGen to domestic platforms like Silicon Intelligence and ShanJian, this phenomenon reveals how AI is democratizing video content creation for millions of creators.",
+    date: 'April 18, 2026',
+    readTime: '16 min read'
+  },
   {
     slug: 'stanford-ai-index-2026-china-rise',
     title: "Stanford AI Index 2026: China's 'Parallel Run' Era Has Arrived",
