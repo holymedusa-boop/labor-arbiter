@@ -2,6 +2,11 @@ import Link from 'next/link'
 
 // SEO Metadata for each article
 const postMetadata = {
+  'china-ai-april-revolution-2026': {
+    metaTitle: "China's AI April Revolution: Robots, Models & 20B AI Videos",
+    metaDescription: "April 2025: Humanoid robots complete marathons, DeepSeek V4 rumored, Doubao 2.0 launches, and China hits 20 billion AI-generated videos. The month that changed everything.",
+    keywords: 'China AI April 2025, humanoid robot marathon, Tiangong Ultra, DeepSeek V4, ByteDance Doubao 2.0, Alibaba Qwen, AI video generation, embodied AI, UI-TARS, 20 billion AI clips, Stanford AI Index 2026',
+  },
   'china-ai-avatar-revolution-2026': {
     metaTitle: "China's AI Avatar Revolution: 410 Million Views Signal Global Content Shift",
     metaDescription: "Chinese AI avatar tools are experiencing explosive growth with 410 million topic views and 200% weekly growth. From HeyGen to domestic platforms like Silicon Intelligence and ShanJian, this phenomenon reveals how AI is democratizing video content creation.",

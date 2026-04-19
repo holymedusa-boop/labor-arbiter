@@ -1,7 +1,15 @@
 import Link from 'next/link'
 
-// Blog posts list - updated April 18, 2026
+// Blog posts list - updated April 19, 2026
 const posts = [
+  {
+    slug: 'china-ai-april-revolution-2026',
+    title: "China's AI April Revolution: Humanoid Robots Race, Multimodal Models Explode, and 2 Billion AI Videos Reshape Global Content",
+    category: 'AI Trends',
+    excerpt: "April 2025 marks a watershed moment for China's AI industry. From the world's first humanoid robot half-marathon to DeepSeek's rumored V4 launch and ByteDance's Doubao 2.0 release, Chinese AI is accelerating on all fronts with 20 billion AI-generated clips.",
+    date: 'April 19, 2026',
+    readTime: '17 min read'
+  },
   {
     slug: 'china-ai-avatar-revolution-2026',
     title: "China's AI Avatar Revolution: How 410 Million Views Signal a Global Content Creation Shift",

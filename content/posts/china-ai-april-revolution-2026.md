@@ -10,7 +10,7 @@ export const metadata = {
 
 # China's AI April Revolution: Humanoid Robots Race, Multimodal Models Explode, and 2 Billion AI Videos Reshape Global Content
 
-![AI Revolution China](https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200&h=600&fit=crop)
+![AI Revolution China](https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200&h=600&fit=crop)
 *China's AI ecosystem in April 2025: From laboratory breakthroughs to real-world endurance tests, the industry is hitting its stride on multiple fronts simultaneously.*
 
 ## Executive Summary: The Month That Changed Everything
