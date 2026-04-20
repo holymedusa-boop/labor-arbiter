@@ -292,6 +292,9 @@ As the defending champion, the Beijing Humanoid Robot Innovation Center's Tiango
 
 ---
 
+![Robot Race Technology](https://images.unsplash.com/photo-1535378437327-1e0905b16780?w=800&h=400&fit=crop)
+*From stumbling to sprinting: China's humanoid robots have improved half-marathon times by 68% in just one year, with 40% of teams now achieving full autonomy.*
+
 ## Honor's One-Year Miracle: From Smartphone to Robot
 
 ### Transferring Consumer Electronics DNA to Robotics
@@ -348,6 +351,9 @@ The investment thesis has fundamentally shifted. As one Meituan strategic invest
 TARS's technical achievements support this valuation. The company developed the AWE 3.0 (AI World Engine) general embodied intelligence model, achieved a Guinness World Record for "most sub-millimeter wire harness assemblies by a robot in one hour" (105 assemblies), and created an end-to-end "world model" that improved generalization in unstructured environments by 300% compared to traditional VLA (Vision-Language-Action) architectures.
 
 ---
+
+![TARS Investment](https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=400&fit=crop)
+*TARS's $455M Pre-A round represents the largest single financing in China's embodied intelligence history, backed by 20+ top-tier investors including Hillhouse and Sequoia.*
 
 ## The Ecosystem Map: 300+ Companies and the Manufacturing Advantage
 
@@ -449,6 +455,9 @@ China's embodied intelligence acceleration carries global implications that exte
 | **Commercialization Speed** | 12 months from concept to world record | Typical 3-5 year cycles |
 
 ---
+
+![Shenzhen Service Robots](https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop)
+*Shenzhen's home-cleaning robot pilot demonstrates embodied intelligence moving from industrial parks to living rooms, attracting international attention for practical AI applications.*
 
 ## Social Voices: What People Are Saying
 
