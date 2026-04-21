@@ -1,55 +1,19 @@
 import Link from 'next/link'
 
-const posts = [
-  {
-    slug: 'china-embodied-intelligence-robot-marathon-2026',
-    title: "China's Embodied Intelligence Revolution: When Robots Outrun Humans — April 2026",
-    category: 'AI Trends',
-    excerpt: "Honor's 'Lightning' robot breaks human half-marathon world record in 50:26. TARS raises $455M. 102 teams compete as China's embodied intelligence sector hits an inflection point.",
-    date: 'April 21, 2026',
-    readTime: '18 min read'
-  },
-  {
-    slug: 'china-ai-april-infrastructure-2026',
-    title: "China's AI Revolution: Education Reform, National Standards, and Ecosystem Breakthroughs in April 2026",
-    category: 'AI Trends',
-    excerpt: "Shanghai Jiao Tong University launches 'AI Ten Initiatives,' China establishes first humanoid robot national standards, and domestic AI models achieve parity with DeepSeek-R1.",
-    date: 'April 20, 2026',
-    readTime: '16 min read'
-  },
-  {
-    slug: 'china-ai-april-revolution-2026',
-    title: "China's AI April Revolution: Humanoid Robots Race, Multimodal Models Explode, and 2 Billion AI Videos Reshape Global Content",
-    category: 'AI Trends',
-    excerpt: "April 2025 marks a watershed moment for China's AI industry. From the world's first humanoid robot half-marathon to DeepSeek's rumored V4 launch and ByteDance's Doubao 2.0 release.",
-    date: 'April 19, 2026',
-    readTime: '17 min read'
-  },
-  {
-    slug: 'china-ai-avatar-revolution-2026',
-    title: "China's AI Avatar Revolution: How 410 Million Views Signal a Global Content Creation Shift",
-    category: 'AI Applications',
-    excerpt: "Chinese AI avatar tools are experiencing explosive growth with 410 million topic views and 200% weekly growth. From HeyGen to domestic platforms like Silicon Intelligence and ShanJian.",
-    date: 'April 18, 2026',
-    readTime: '16 min read'
-  },
-  {
-    slug: 'stanford-ai-index-2026-china-rise',
-    title: "Stanford AI Index 2026: China's 'Parallel Run' Era Has Arrived",
-    category: 'AI Trends',
-    excerpt: "Stanford HAI's 423-page AI Index Report 2026 reveals a historic turning point: the China-US AI gap has 'effectively closed' to just 2.7%. Alibaba ranks #3 globally.",
-    date: 'April 17, 2026',
-    readTime: '16 min read'
-  },
-  {
-    slug: 'alibaba-token-hub-100b-gambit',
-    title: "Alibaba's $100B Token Gambit: Inside the Alibaba Token Hub Revolution Reshaping China's AI Economy",
-    category: 'AI Trends',
-    excerpt: "Deep dive into Alibaba's strategic pivot with ATH: How the tech giant is betting its future on Token economics, targeting $100B annual revenue from cloud and AI by 2031.",
-    date: 'April 16, 2026',
-    readTime: '17 min read'
-  }
-]
+// Auto-import posts from shared metadata
+const { allPosts } = require('../lib/posts-meta')
+
+// Helper to format ISO date (2026-04-21) → "April 21, 2026"
+function formatDate(isoDate) {
+  const d = new Date(isoDate + 'T00:00:00')
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+}
+
+// Take the latest 6 posts (already sorted newest-first in posts-meta.js)
+const posts = allPosts.slice(0, 6).map(post => ({
+  ...post,
+  date: formatDate(post.date)
+}))
 
 const stats = [
   { value: '103+', label: 'Companies Tracked' },
