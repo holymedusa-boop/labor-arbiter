@@ -3,6 +3,10 @@ node_modules/
 out/
 .env
 
+# Agent memory - personal workspace context, not for repo
+MEMORY.md
+memory/
+
 # Daily agent reports - do not commit to main branch
 ainchina-agents/reports/
 *.log
