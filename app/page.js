@@ -1,63 +1,19 @@
 import Link from 'next/link'
 
-const posts = [
-  {
-    slug: 'qwen3-technical-analysis',
-    title: "Qwen3 Technical Analysis: Alibaba's 235B MoE Model with Hybrid Reasoning Architecture",
-    category: 'Technical Analysis',
-    excerpt: "How Alibaba's latest model achieves GPT-4 level performance with dynamic fast/deep reasoning modes, 22B active parameters, and 70% cost reduction through revolutionary MoE architecture.",
-    date: 'March 31, 2026',
-    readTime: '18 min read'
-  },
-  {
-    slug: 'deepseek-v3-deep-dive',
-    title: 'DeepSeek-V3: The $5.6M Training Run That Changed AI Economics',
-    category: 'Technical Analysis',
-    excerpt: 'How a Hangzhou-based team achieved GPT-4 level performance with 18x cost reduction through MLA attention, FP8 training, and revolutionary MoE architecture. Full technical breakdown.',
-    date: 'March 31, 2026',
-    readTime: '18 min read'
-  },
-  {
-    slug: 'kimi-2m-context',
-    title: "Kimi K2.5 Technical Analysis: 1 Trillion Parameters, 256K Context, Agent Swarms",
-    category: 'AI Chatbots',
-    excerpt: 'Inside Moonshot AI\'s trillion-parameter MoE model with 384 experts, MuonClip optimizer, and autonomous agent orchestration. Why Cursor built Composer 2 on Kimi.',
-    date: 'March 31, 2026',
-    readTime: '16 min read'
-  },
-  {
-    slug: 'chinese-ai-index-2026',
-    title: 'Chinese AI Index 2026: 103 Companies, $15.2B Funding, Market Intelligence',
-    category: 'Market Intelligence',
-    excerpt: 'Complete tracking of China\'s AI ecosystem: DeepSeek, Moonshot, MiniMax, 01.AI, Zhipu funding rounds, valuations, user metrics, and competitive positioning.',
-    date: 'March 31, 2026',
-    readTime: '22 min read'
-  },
-  {
-    slug: 'deepseek-vs-chatgpt',
-    title: 'DeepSeek vs ChatGPT: Benchmarks, Pricing, Architecture Compared (2026)',
-    category: 'AI Chatbots',
-    excerpt: 'Side-by-side analysis of MATH-500, SWE-Bench, API costs, and real-world performance. When to use which model for production applications.',
-    date: 'March 31, 2026',
-    readTime: '14 min read'
-  },
-  {
-    slug: 'chinese-ai-landscape',
-    title: 'The Rise of Chinese AI: Complete Ecosystem Map (Foundation to Application)',
-    category: 'Market Intelligence',
-    excerpt: 'From trillion-parameter models to video generation: mapping China\'s AI stack including chip makers (Biren, Moore Threads), cloud providers, and application layer.',
-    date: 'March 31, 2026',
-    readTime: '20 min read'
-  },
-  {
-    slug: 'ai-video-tools-china',
-    title: 'Chinese AI Video Generation: Kling, Vidu, Hailuo vs Sora Technical Comparison',
-    category: 'AI Video',
-    excerpt: 'Technical analysis of video generation platforms. Kling\'s 2-minute 1080p output, Vidu\'s visual fidelity, Hailuo\'s audio synchronization. Features, pricing, benchmarks.',
-    date: 'April 1, 2026',
-    readTime: '15 min read'
-  }
-]
+// Auto-import posts from shared metadata
+const { allPosts } = require('../lib/posts-meta')
+
+// Helper to format ISO date (2026-04-21) → "April 21, 2026"
+function formatDate(isoDate) {
+  const d = new Date(isoDate + 'T00:00:00')
+  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
+}
+
+// Take the latest 6 posts (already sorted newest-first in posts-meta.js)
+const posts = allPosts.slice(0, 6).map(post => ({
+  ...post,
+  date: formatDate(post.date)
+}))
 
 const stats = [
   { value: '103+', label: 'Companies Tracked' },

@@ -113,6 +113,9 @@ The Beijing "Humanoid Robot Marathon" on April 20, 2026, saw Shenzhen Glory Smar
 
 **Key Insight**: Standards transform humanoid robots from demonstration pieces into industrial products. Chinese manufacturers can now design for compliance rather than experimentation, enabling the supply chain scaling necessary for cost reduction.
 
+![Humanoid Robot Standards](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800&h=400&fit=crop)
+*China's first national humanoid robot standards establish the foundation for mass production and commercial deployment.*
+
 ---
 
 ## Domestic AI Models Reach Parity: Huawei PanGu Ultra vs. DeepSeek-R1
@@ -137,6 +140,9 @@ PanGu Ultra employs a Mixture-of-Experts (MoE) architecture with 1.08 trillion t
 The model particularly excels in Chinese-language tasks, achieving 91.4% on the C-Eval benchmark compared to DeepSeek-R1's 89.8%. This suggests Huawei's training data curation and reinforcement learning from human feedback (RLHF) prioritization have created genuine Chinese-language optimization.
 
 **Strategic Implication**: Multiple Chinese models reaching DeepSeek-R1 parity indicates ecosystem maturity rather than single-company exceptionalism. The domestic AI sector now has multiple viable alternatives to international models.
+
+![AI Model Performance](https://images.unsplash.com/photo-1676299081847-824916de030a?w=800&h=400&fit=crop)
+*Huawei PanGu Ultra matches DeepSeek-R1 performance, demonstrating China's broader AI ecosystem maturity beyond single-company breakthroughs.*
 
 ---
 
