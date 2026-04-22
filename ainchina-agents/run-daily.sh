@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# AI in China - Daily Automation v2.0
-# 每日自动化：Agent 1 + Agent 2 数据分析
+# AI in China - Daily Automation v2.1
+# 每日自动化：Agent 2 市场情报分析
+# Agent 1 (TrafficOps): 已废弃 (2026-04-23)
 # Agent 3 已退役，内容生成由 Kimi Claw 4:15 AM Cron 直接执行
 # 运行时间: 每天 4:07 AM
 
 set -e
 
 echo "=========================================="
-echo "🚀 AI in China - Daily Automation v2.0"
+echo "🚀 AI in China - Daily Automation v2.1"
 echo "开始时间: $(date '+%Y-%m-%d %H:%M:%S')"
 echo "=========================================="
 echo ""
@@ -38,36 +39,17 @@ else
     echo "⚠️  未找到 .env 文件"
 fi
 
-# 检查 Vercel Token（Agent 1 需要）
-if [ -z "$VERCEL_TOKEN" ] || [ "$VERCEL_TOKEN" = "your_vercel_token_here" ]; then
-    echo "⚠️  VERCEL_TOKEN 未配置，Agent 1 将使用估算数据"
-else
-    echo "✅ Vercel API 已配置"
-fi
-
-echo "🤖 Agent 3 已退役，内容生成由 4:15 AM Cron 唤醒 Kimi Claw 执行"
+echo "🤖 Agent 1 已废弃 | Agent 3 已退役 | 内容生成由 4:15 AM Cron 唤醒 Kimi Claw 执行"
 echo ""
 
 # 记录开始
 START_TIME=$(date +%s)
 
-# Agent 1: 流量运营
-echo "=========================================="
-echo "🤖 Agent 1: TrafficOps - 流量分析"
-echo "=========================================="
-cd "$WORKSPACE"
-node agents/agent-1-traffic.js || {
-    echo "⚠️  Agent 1 失败，但继续执行 Agent 2"
-}
-
-echo ""
-echo "✅ Agent 1 完成"
-echo ""
-
 # Agent 2: 市场分析
 echo "=========================================="
 echo "🤖 Agent 2: MarketIntel - 市场情报"
 echo "=========================================="
+cd "$WORKSPACE"
 node agents/agent-2-market.js || {
     echo "⚠️  Agent 2 失败"
 }
@@ -83,8 +65,9 @@ cat > "$NOTIFICATION_FILE" << EOF
 
 时间: $(date '+%Y-%m-%d %H:%M:%S')
 
-Agent 1/2 已完成:
-✅ traffic-report-$DATE.json
+Agent 状态:
+⏸️  Agent 1 (TrafficOps): 已废弃 (2026-04-23)
+✅ Agent 2 (MarketIntel): 已执行
 ✅ market-brief-$DATE.json
 
 ═══════════════════════════════════════════
@@ -139,7 +122,7 @@ echo "📊 执行摘要"
 echo "=========================================="
 echo "执行时间: ${DURATION}秒"
 echo ""
-echo "✅ Agent 1: 流量分析"
+echo "⏸️  Agent 1: 已废弃 (2026-04-23)"
 echo "✅ Agent 2: 市场情报"
 echo "⏸️  Agent 3: 已退役"
 echo ""
