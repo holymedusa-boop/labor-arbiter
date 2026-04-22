@@ -271,7 +271,7 @@ npm run sitemap
 
 ---
 
-## Daily Workflow (Cron at 4:15 AM)
+## Daily Workflow (Cron at 4:15 AM) - UPDATED April 23, 2026
 
 When woken by cron:
 1. **READ THIS MEMORY.MD** (language + benchmark standards)
@@ -287,7 +287,39 @@ When woken by cron:
 11. Git add, commit, push
 12. Verify deployment
 
-**Note**: As of April 21, 2026, do NOT manually update `app/page.js` or `app/blog/page.js`. Both pages auto-import from `lib/posts-meta.js`.
+### Agent Architecture (April 23, 2026 Update)
+
+**DEPRECATED:** Agent 1 (TrafficOps) - removed from workflow 2026-04-23
+- Reason: Module file missing (`agent-1-traffic.js`), not critical for publishing
+- VERCEL_TOKEN no longer needed for basic deployment
+
+**ACTIVE:** Agent 2 (MarketIntel) - generates market brief at 4:07 AM
+- Output: `market-brief-YYYY-MM-DD.json` in `ainchina-agents/reports/`
+
+**ACTIVE:** Kimi Claw (main agent) - content generation at 4:15 AM
+- **NO SUBAGENTS for content generation** — subagents lack kimi_search capability
+- Main agent performs all news research and article writing directly
+- Wake via cron heartbeat, HEARTBEAT.md read triggers content workflow
+
+**Current Flow:**
+```
+4:07 AM: run-daily.sh → Agent 2 generates market brief
+4:15 AM: Cron heartbeat → Kimi Claw reads HEARTBEAT.md → executes daily workflow
+```
+
+### Subagent Policy (April 23, 2026)
+
+**DO NOT use subagents for content generation.** Subagents lack:
+- kimi_search capability (cannot search latest news)
+- kimi_fetch capability (cannot fetch URLs)
+- Access to workspace files and git operations
+
+**Use subagents only for:**
+- Long-running background tasks unrelated to daily publishing
+- Tasks that don't require real-time information
+- Development/debugging work
+
+**Content generation must be direct** by main agent.
 
 ---
 
@@ -310,15 +342,24 @@ When woken by cron:
 - **Fix**: Refactored to auto-import from `lib/posts-meta.js`, added sort by date
 - **Side Effect**: Blog page also refactored to use single source of truth
 
+### 2026-04-23
+- **Error**: Subagent spawned for content generation failed (cannot search)
+- **Impact**: Daily article generation blocked, user had to manually intervene
+- **Root Cause**: Subagents lack kimi_search capability — cannot research latest news
+- **Fix**: Abandoned subagent approach; main agent now handles all content generation directly
+- **Side Effect**: Agent 1 (TrafficOps) also removed from workflow (file missing, not needed)
+- **Status**: Today (4/23) article published successfully with direct execution
+
 ---
 
 ## User Preferences
 
 - **Content Language**: English only
 - **Quality Standard**: Match MiniMax/Doubao articles exactly
-- **Execution Mode**: Direct (no subagents for content generation)
+- **Execution Mode**: **Direct** (no subagents for content generation)
 - **Wake Mechanism**: Cron job at 4:15 AM daily
 - **Verification**: Run full checklist before every publish
+- **Agent Policy**: Main agent performs all search and writing; subagents disabled for daily workflow
 
 ---
 
@@ -434,8 +475,9 @@ content/posts/*.md (article content)
 
 ---
 
-*Last updated: April 4, 2026*
+*Last updated: April 23, 2026*
 *Critical Rules: 1 (Language)*
 *Quality Checks: 25 items*
 *Benchmark Articles: 3*
 *Automated Checks: 5-Point Protocol*
+*Agent Architecture: v2.1 (Agent 1 deprecated, Agent 2 + Kimi Claw active)*
