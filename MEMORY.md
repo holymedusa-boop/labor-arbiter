@@ -281,10 +281,13 @@ When woken by cron:
 5. Write article in ENGLISH following ALL checklists above
 6. **RUN FULL QUALITY CHECKLIST** (length, depth, images, SEO)
 7. Save to `content/posts/`
-8. Update `lib/posts-meta.js`
+8. **Update ONLY `lib/posts-meta.js`** (homepage/blog auto-sync from here)
 9. **RUN `npm run sitemap`** (auto-generates sitemap.xml)
-10. Git add, commit, push
-11. Verify deployment
+10. `npm run build` (builds with auto-synced homepage/blog)
+11. Git add, commit, push
+12. Verify deployment
+
+**Note**: As of April 21, 2026, do NOT manually update `app/page.js` or `app/blog/page.js`. Both pages auto-import from `lib/posts-meta.js`.
 
 ---
 
@@ -300,6 +303,13 @@ When woken by cron:
 - **Impact**: User frustration, pattern identified
 - **Fix**: Re-wrote in English, created this MEMORY.md
 
+### 2026-04-21
+- **Error**: Homepage showing old articles (March 31) instead of latest (April 21)
+- **Impact**: User had to manually ask to fix sorting
+- **Root Cause**: `app/page.js` had hardcoded article array with outdated entries
+- **Fix**: Refactored to auto-import from `lib/posts-meta.js`, added sort by date
+- **Side Effect**: Blog page also refactored to use single source of truth
+
 ---
 
 ## User Preferences
@@ -312,10 +322,11 @@ When woken by cron:
 
 ---
 
-*Last updated: April 3, 2026*
+*Last updated: April 21, 2026*
 *Critical Rules: 1 (Language)*
 *Quality Checks: 25 items*
 *Benchmark Articles: 3*
+*Auto-sync: Homepage + Blog page (single source of truth)*
 
 ---
 
@@ -387,6 +398,39 @@ Token only needed for:
 - Custom domain config
 
 **For article publishing: Git push is sufficient.**
+
+---
+
+## Website Architecture - Single Source of Truth (April 21, 2026)
+
+**Problem**: Multiple hardcoded article arrays across files caused maintenance headaches:
+- `app/page.js` - Homepage articles (hardcoded)
+- `app/blog/page.js` - Blog list articles (hardcoded)
+- `lib/posts-meta.js` - Metadata (used by article detail pages only)
+
+**Solution**: Refactored to single source of truth:
+- `lib/posts-meta.js` - ONLY source of article metadata, auto-sorted by date
+- `app/page.js` - Imports from posts-meta, shows latest 6
+- `app/blog/page.js` - Imports from posts-meta, shows all
+- `app/blog/[slug]/page.js` - SEO metadata (still per-article, but can be refactored later)
+
+**Publishing workflow** (simplified April 21, 2026):
+1. Write article → `content/posts/[slug].md`
+2. Add metadata → `lib/posts-meta.js`
+3. `npm run sitemap`
+4. `npm run build`
+5. `git add -A && git commit && git push origin main`
+6. ✅ Homepage + blog list auto-sync from posts-meta.js
+
+**Key file relationships**:
+```
+lib/posts-meta.js (single source)
+    ├── app/page.js (latest 6)
+    └── app/blog/page.js (all articles)
+
+content/posts/*.md (article content)
+    └── app/blog/[slug]/page.js (detail pages)
+```
 
 ---
 
