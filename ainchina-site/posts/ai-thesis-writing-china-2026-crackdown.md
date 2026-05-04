@@ -385,6 +385,7 @@ Below are authentic comments from Chinese social media platforms, translated for
 
 ## Related Articles
 
+- [Doubao Goes Premium: How ByteDance Just Ended China's AI Free Era](/posts/doubao-premium-china-ai-free-era-ends-2026)
 - [DeepSeek-V4: The Open Source Model Disrupting China's AI Landscape](/posts/deepseek-v4-million-token-china-ai-sovereignty)
 - [The AI Interview Coach Phenomenon: How Chinese Graduates Are Using AI to Crack the Job Market](/posts/ai-interview-coaching-china-2025)
 - [MiniMax Talkie: How a Chinese AI App Reached 2 Billion Users Abroad](/posts/minimax-talkie-global-success)
