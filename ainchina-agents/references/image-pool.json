@@ -1,0 +1,428 @@
+{
+  "version": "2026-05-11",
+  "description": "Unsplash image pool for AI in China articles. Each article should pick DIFFERENT images from different categories to avoid AdSense 'low quality content' flag due to image repetition.",
+  "rules": [
+    "Hero image must be from a different category than the previous 3 articles",
+    "Inline images must differ from hero and from each other",
+    "Do NOT use the same image ID more than once per month",
+    "Prefer images not used in last 30 articles"
+  ],
+  "categories": {
+    "technology_abstract": {
+      "description": "Abstract tech visuals, neural networks, data flows",
+      "images": [
+        {
+          "id": "photo-1677442136019-21780ecad995",
+          "url": "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200",
+          "used_count": 16,
+          "last_used": "2026-05-11",
+          "status": "overused \u2014 retire for 60 days"
+        },
+        {
+          "id": "photo-1639322537228-f710d846310a",
+          "url": "https://images.unsplash.com/photo-1639322537228-f710d846310a?w=800",
+          "used_count": 4,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1551288049-bebda4e38f71",
+          "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+          "used_count": 4,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1618005182384-a83a8bd57fbe",
+          "url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1620641788421-7a1c342ea42e",
+          "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1639762681485-074b7f938ba0",
+          "url": "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800",
+          "used_count": 5,
+          "last_used": "2026-05-11",
+          "status": "overused \u2014 retire for 60 days"
+        },
+        {
+          "id": "photo-1518770660439-4636190af475",
+          "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        }
+      ]
+    },
+    "chinese_cityscape": {
+      "description": "Chinese cities, skylines, modern architecture",
+      "images": [
+        {
+          "id": "photo-1611974789855-9c2a0a7236a3",
+          "url": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200",
+          "used_count": 6,
+          "last_used": "2026-05-11",
+          "status": "overused \u2014 retire for 60 days"
+        },
+        {
+          "id": "photo-1485827404703-89b55fcc595e",
+          "url": "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800",
+          "used_count": 6,
+          "last_used": "2026-05-10",
+          "status": "overused \u2014 retire for 60 days"
+        },
+        {
+          "id": "photo-1581091226825-a6a2a5aee158",
+          "url": "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1536240478700-b869070f9279",
+          "url": "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1492691527719-9d1e07e534b4",
+          "url": "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?w=800",
+          "used_count": 5,
+          "last_used": "2026-05-11",
+          "status": "overused \u2014 retire for 60 days"
+        },
+        {
+          "id": "photo-1512941937669-90a1b58e7e9c",
+          "url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
+          "used_count": 4,
+          "last_used": "2026-05-11",
+          "status": "available"
+        }
+      ]
+    },
+    "data_visualization": {
+      "description": "Charts, dashboards, data analytics visuals",
+      "images": [
+        {
+          "id": "photo-1620712943543-bcc4688e7485",
+          "url": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800",
+          "used_count": 8,
+          "last_used": "2026-05-11",
+          "status": "overused \u2014 retire for 60 days"
+        },
+        {
+          "id": "photo-1553729459-efe14ef6055d",
+          "url": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1551434678-e076c223a692",
+          "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1551836022-d5d88e9218df",
+          "url": "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1555949963-aa79dcee981c",
+          "url": "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        }
+      ]
+    },
+    "funding_finance": {
+      "description": "Money, investment, venture capital, stock market",
+      "images": [
+        {
+          "id": "photo-1576091160399-112ba8d25d1d",
+          "url": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800",
+          "used_count": 1,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1567789884554-0b844b597180",
+          "url": "https://images.unsplash.com/photo-1567789884554-0b844b597180?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1565514020176-db98e3c15432",
+          "url": "https://images.unsplash.com/photo-1565514020176-db98e3c15432?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1556742049-0cfed4f6a45d",
+          "url": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1551650975-87deedd944c3",
+          "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1553877522-43269d4ea984",
+          "url": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800",
+          "used_count": 1,
+          "last_used": "2026-05-11",
+          "status": "available"
+        }
+      ]
+    },
+    "coding_development": {
+      "description": "Code, developer workspace, programming",
+      "images": [
+        {
+          "id": "photo-1574717024653-61fd2cf4d44d",
+          "url": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1558494949-ef010cbdcc31",
+          "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1611162617474-5b21e879e113",
+          "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1531746790731-6c087fecd65a",
+          "url": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        }
+      ]
+    },
+    "ai_robotics": {
+      "description": "Robots, automation, humanoid AI",
+      "images": [
+        {
+          "id": "photo-1676299081847-824916de030a",
+          "url": "https://images.unsplash.com/photo-1676299081847-824916de030a?w=800",
+          "used_count": 2,
+          "last_used": "2026-05-11",
+          "status": "available"
+        },
+        {
+          "id": "photo-1451187580459-43490279c0fa",
+          "url": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
+          "used_count": 3,
+          "last_used": "2026-05-11",
+          "status": "available"
+        }
+      ]
+    }
+  },
+  "fresh_pool": {
+    "description": "NEW images \u2014 never used before. Prioritize these.",
+    "images": [
+      {
+        "id": "photo-1504384308090-c54be3855833",
+        "url": "https://images.unsplash.com/photo-1504384308090-c54be3855833?w=1200",
+        "used_count": 2,
+        "status": "RETIRED — Unsplash removed this photo (HTTP 404)",
+        "last_used": "2026-05-14",
+        "notes": "Replaced with photo-1594915440248-1e419eba6611 in six-networks article"
+      },
+      {
+        "id": "photo-1526374965328-7f61d4dc18c5",
+        "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1504639725590-34d0984388bd",
+        "url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800",
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-05-13"
+      },
+      {
+        "id": "photo-1519389950473-47ba0277781c",
+        "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-05-14"
+      },
+      {
+        "id": "photo-1531297484001-80022131f5a1",
+        "url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1550751827-4bd374c3f58b",
+        "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-05-13"
+      },
+      {
+        "id": "photo-1510915228340-29c85a43dcfe",
+        "url": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?w=800",
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-05-13"
+      },
+      {
+        "id": "photo-1526379095098-d400fd0bf935",
+        "url": "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1504868584819-f8e8b4b6d7e3",
+        "url": "https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=800",
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-05-13"
+      },
+      {
+        "id": "photo-1488590528505-98d2b5aba04b",
+        "url": "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=800",
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-05-14"
+      },
+      {
+        "id": "photo-1461749280684-dccba630e2f6",
+        "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800",
+        "used_count": 2,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1507721999472-8ed4421c4af2",
+        "url": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1504384764586-bb4cdc1287e0",
+        "url": "https://images.unsplash.com/photo-1504384764586-bb4cdc1287e0?w=800",
+        "used_count": 0,
+        "status": "fresh"
+      },
+      {
+        "id": "photo-1518432031352-d6fc5c10da5a",
+        "url": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1523961131990-5ea7c61b2107",
+        "url": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=800",
+        "used_count": 0,
+        "status": "fresh"
+      },
+      {
+        "id": "photo-1555949963-aa79dcee981d",
+        "url": "https://images.unsplash.com/photo-1555949963-aa79dcee981d?w=800",
+        "used_count": 0,
+        "status": "fresh"
+      },
+      {
+        "id": "photo-1509228468518-31dd6aed6dc8",
+        "url": "https://images.unsplash.com/photo-1509228468518-31dd6aed6dc8?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1535378620166-273708d44e2c",
+        "url": "https://images.unsplash.com/photo-1535378620166-273708d44e2c?w=800",
+        "used_count": 0,
+        "status": "fresh"
+      },
+      {
+        "id": "photo-1558346490-a72b902744c9",
+        "url": "https://images.unsplash.com/photo-1558346490-a72b902744c9?w=800",
+        "used_count": 1,
+        "status": "fresh",
+        "last_used": "2026-05-11"
+      },
+      {
+        "id": "photo-1517245386807-bb43f82c33c4",
+        "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
+        "used_count": 0,
+        "status": "fresh"
+      }
+    ]
+  },
+  "retired_images": {
+    "description": "Images used too frequently \u2014 do NOT use for 60 days",
+    "images": [
+      {
+        "id": "photo-1677442136019-21780ecad995",
+        "reason": "Used 16 times",
+        "retire_until": "2026-07-11"
+      },
+      {
+        "id": "photo-1639762681485-074b7f938ba0",
+        "reason": "Used 5 times",
+        "retire_until": "2026-07-11"
+      },
+      {
+        "id": "photo-1611974789855-9c2a0a7236a3",
+        "reason": "Used 6 times",
+        "retire_until": "2026-07-11"
+      },
+      {
+        "id": "photo-1485827404703-89b55fcc595e",
+        "reason": "Used 6 times",
+        "retire_until": "2026-07-11"
+      },
+      {
+        "id": "photo-1492691527719-9d1e07e534b4",
+        "reason": "Used 5 times",
+        "retire_until": "2026-07-11"
+      },
+      {
+        "id": "photo-1620712943543-bcc4688e7485",
+        "reason": "Used 8 times",
+        "retire_until": "2026-07-11"
+      }
+    ]
+  }
+}

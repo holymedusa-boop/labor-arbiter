@@ -60,7 +60,7 @@ echo ""
 
 # 创建 Kimi Claw 通知文件
 NOTIFICATION_FILE="$REPORTS_DIR/kimi-claw-instructions-$DATE.txt"
-cat > "$NOTIFICATION_FILE" << EOF
+cat > "$NOTIFICATION_FILE" << 'NOTIFYEOF'
 🚀 AI in China - 每日任务准备完成
 
 时间: $(date '+%Y-%m-%d %H:%M:%S')
@@ -68,7 +68,22 @@ cat > "$NOTIFICATION_FILE" << EOF
 Agent 状态:
 ⏸️  Agent 1 (TrafficOps): 已废弃 (2026-04-23)
 ✅ Agent 2 (MarketIntel): 已执行
-✅ market-brief-$DATE.json
+✅ market-brief-$(date +%Y-%m-%d).json
+
+═══════════════════════════════════════════
+🚨 CRITICAL: FILE SAVE LOCATION
+═══════════════════════════════════════════
+✅ CORRECT path (MUST use this):
+   /root/.openclaw/workspace/ainchina-hello/content/posts/[slug].md
+
+❌ WRONG paths (NEVER use these):
+   /root/.openclaw/workspace/content/xxx.md
+   /root/.openclaw/workspace/ainchina-agents/content/xxx.md
+   ./content/xxx.md
+   content/xxx.md
+
+🚨 Git operations MUST run in:
+   cd /root/.openclaw/workspace/ainchina-hello
 
 ═══════════════════════════════════════════
 ⚠️  CRITICAL: LANGUAGE STANDARD
@@ -76,6 +91,21 @@ Agent 状态:
 📝 ALL articles MUST be written in ENGLISH
 📝 Source data is Chinese → Translate concepts to ENGLISH
 📝 Check: Title, body, tables, excerpt ALL in English
+
+═══════════════════════════════════════════
+🖼️  IMAGE ANTI-DUPLICATION (AdSense Quality)
+═══════════════════════════════════════════
+⚠️  CRITICAL: AdSense flagged "low quality content" due to image repetition
+
+Rules:
+- Hero image: Must be NEW (not used in last 30 days)
+- Inline images: Must differ from hero and from each other
+- DO NOT reuse the same 5-10 images across all articles
+
+Reference file: ainchina-agents/references/image-pool.json
+- Contains categorized image pool with usage tracking
+- Prioritize "fresh_pool" section (never-used images)
+- Avoid "retired_images" (overused — locked for 60 days)
 
 ═══════════════════════════════════════════
 📊 BENCHMARK QUALITY CHECK (vs MiniMax/Doubao)
@@ -91,8 +121,10 @@ SEO Requirements:
 - Meta title: <60 chars
 - Meta description: 150-160 chars  
 - Keywords: 8-10 terms
-- JSON-LD structured data
-- 4 related article links
+- JSON-LD structured data (injected by page.js, NOT in markdown body)
+- 4 related article links (use /blog/slug/ format)
+- NO <script type="application/ld+json"> tags in markdown
+- NO "@context": "https://schema.org" text blocks in markdown
 
 ═══════════════════════════════════════════
 📚 REFERENCE BENCHMARK ARTICLES:
@@ -108,9 +140,25 @@ Match their depth, structure, and quality.
 ═══════════════════════════════════════════
 
 如果 Kimi Claw 未自动唤醒，请手动发送消息触发。
-EOF
+NOTIFYEOF
 
 echo "📄 通知文件: $NOTIFICATION_FILE"
+echo ""
+echo "🔍 验证网站目录存在..."
+WEBSITE_DIR="/root/.openclaw/workspace/ainchina-hello"
+if [ -d "$WEBSITE_DIR" ]; then
+    echo "✅ 网站目录存在: $WEBSITE_DIR"
+    if [ -d "$WEBSITE_DIR/content/posts" ]; then
+        echo "✅ 文章目录存在: $WEBSITE_DIR/content/posts"
+    else
+        echo "⚠️  文章目录不存在，创建中..."
+        mkdir -p "$WEBSITE_DIR/content/posts"
+        echo "✅ 已创建: $WEBSITE_DIR/content/posts"
+    fi
+else
+    echo "❌ 网站目录不存在: $WEBSITE_DIR"
+fi
+
 echo ""
 
 # 计算执行时间
@@ -130,4 +178,6 @@ echo "📁 生成文件:"
 ls -la "$REPORTS_DIR"/*-$DATE.* 2>/dev/null || echo "无"
 echo ""
 echo "🕐 4:15 AM Kimi Claw 将自动接管内容生成"
+echo "   文章必须保存到: ainchina-hello/content/posts/"
+echo "   Git 操作必须在: ainchina-hello/"
 echo "=========================================="

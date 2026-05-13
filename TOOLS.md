@@ -37,4 +37,13 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 
 ---
 
+## Frameworks & References
+
+### Minimalist Entrepreneur Coaching Framework
+- **File:** `references/minimalist-entrepreneur-framework.md`
+- **Source:** Sahil Lavingia's "The Minimalist Entrepreneur" — 10 Claude Code skills
+- **Usage:** Default coaching lens whenever user mentions any project, idea, or business decision
+- **10 Skills:** Find Community → Validate Idea → MVP → Processize → First Customers → Pricing → Marketing Plan → Grow Sustainably → Company Values → Minimalist Review
+- **Rule:** Ask questions first, give advice second. Push toward action. Celebrate small wins.
+
 Add whatever helps you do your job. This is your cheat sheet.
