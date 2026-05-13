@@ -91,7 +91,7 @@
           "url": "https://images.unsplash.com/photo-1536240478700-b869070f9279?w=800",
           "used_count": 2,
           "last_used": "2026-05-11",
-          "status": "available"
+          "status": "RETIRED — Unsplash removed this photo (HTTP 404)"
         },
         {
           "id": "photo-1492691527719-9d1e07e534b4",
@@ -171,7 +171,7 @@
           "url": "https://images.unsplash.com/photo-1565514020176-db98e3c15432?w=800",
           "used_count": 3,
           "last_used": "2026-05-11",
-          "status": "available"
+          "status": "RETIRED — Unsplash removed this photo (HTTP 404)"
         },
         {
           "id": "photo-1556742049-0cfed4f6a45d",
@@ -341,7 +341,7 @@
         "id": "photo-1504384764586-bb4cdc1287e0",
         "url": "https://images.unsplash.com/photo-1504384764586-bb4cdc1287e0?w=800",
         "used_count": 0,
-        "status": "fresh"
+        "status": "RETIRED — Unsplash removed this photo (HTTP 404)"
       },
       {
         "id": "photo-1518432031352-d6fc5c10da5a",
@@ -360,26 +360,26 @@
         "id": "photo-1555949963-aa79dcee981d",
         "url": "https://images.unsplash.com/photo-1555949963-aa79dcee981d?w=800",
         "used_count": 0,
-        "status": "fresh"
+        "status": "RETIRED — Unsplash removed this photo (HTTP 404)"
       },
       {
         "id": "photo-1509228468518-31dd6aed6dc8",
         "url": "https://images.unsplash.com/photo-1509228468518-31dd6aed6dc8?w=800",
         "used_count": 1,
-        "status": "fresh",
+        "status": "RETIRED — Unsplash removed this photo (HTTP 404)",
         "last_used": "2026-05-11"
       },
       {
         "id": "photo-1535378620166-273708d44e2c",
         "url": "https://images.unsplash.com/photo-1535378620166-273708d44e2c?w=800",
         "used_count": 0,
-        "status": "fresh"
+        "status": "RETIRED — Unsplash removed this photo (HTTP 404)"
       },
       {
         "id": "photo-1558346490-a72b902744c9",
         "url": "https://images.unsplash.com/photo-1558346490-a72b902744c9?w=800",
         "used_count": 1,
-        "status": "fresh",
+        "status": "RETIRED — Unsplash removed this photo (HTTP 404)",
         "last_used": "2026-05-11"
       },
       {
