@@ -4,9 +4,12 @@
 
 When woken by cron at 4:15 AM for content generation:
 
-### Phase 0: CRITICAL PATH — File Location (Do NOT Skip)
+### Phase 0: CRITICAL PATH — File Location & Naming (Do NOT Skip)
 
-**Article MUST be saved to**: `ainchina-hello/content/posts/[YYYY-MM-DD-slug].md`
+**Article MUST be saved to**: `ainchina-hello/content/posts/[slug].md`
+  - **slug format**: `topic-keywords-YYYY` (e.g. `china-ai-creator-economy-digital-humans-2026.md`)
+  - **NO date prefix** in filename (❌ `2026-05-16-china-xxx.md` is WRONG)
+  - Date belongs in frontmatter `date:` field only
 
 **Git operations MUST run in**: `cd /root/.openclaw/workspace/ainchina-hello`
 
@@ -21,6 +24,29 @@ When woken by cron at 4:15 AM for content generation:
 - [ ] Remember: **ALL content must be in ENGLISH**
 
 ### Phase 2: Writing Standards
+
+### Phase 2: Writing Standards
+
+#### Article Structure (CRITICAL — Template Diversification)
+**NEVER use the same structure twice in a row.** Review last 3 articles' structures and pick a DIFFERENT template.
+
+Available templates (rotate randomly):
+- **Template A — Narrative Opening**: Start with a scene/story, not a summary table
+- **Template B — Contrarian Take**: Start with a provocative thesis that challenges conventional wisdom
+- **Template C — Deep Dive Single Subject**: Profile ONE company/product in depth (5-7 sections)
+- **Template D — Comparative Framework**: Side-by-side comparison of two subjects
+- **Template E — Timeline / Historical Arc**: Trace evolution through phases over time
+- **Template F — Phenomenon Analysis**: Focus on societal/behavioral impact, not just companies
+
+**See MEMORY.md for full template definitions.**
+
+**Template Breaking Rules:**
+- [ ] Do NOT start every article with "Executive Summary"
+- [ ] Do NOT always use exactly 8-9 sections (vary: 6-10)
+- [ ] Do NOT always put a data table in the first 300 words
+- [ ] Do NOT always end with the same comment section format
+- [ ] Do NOT always use exactly 6 social comments (use 5-7)
+- [ ] Do NOT always use "Chapter X" labels (vary labels or omit)
 
 #### Language (CRITICAL - Zero Tolerance)
 - [ ] Title is English
@@ -76,12 +102,66 @@ Run command: `wc -w < article.md>` to check word count
 # /root/.openclaw/workspace/content/[slug].md  ❌ WRONG
 ```
 
-**Step 2 — Update metadata files:**
+**Step 2 — Update metadata files (ZERO TOLERANCE - Must Pass Before Step 3):**
+
 ```bash
 cd /root/.openclaw/workspace/ainchina-hello
-# Add entry to lib/posts-meta.js (allPosts array)
-# Add entry to app/blog/[slug]/page.js (postMetadata object)
+SLUG=$(ls -t content/posts/*.md | head -1 | xargs basename -s .md)
+TITLE=$(grep '^title:' content/posts/$SLUG.md | head -1 | sed 's/^title: "\(.*\)"/\1/' | sed 's/^title: \(.*\)/\1/' | tr -d '"')
+DATE=$(grep '^date:' content/posts/$SLUG.md | head -1 | sed 's/^date: "\(.*\)"/\1/' | tr -d '"')
+CAT=$(grep '^category:' content/posts/$SLUG.md | head -1 | sed 's/^category: "\(.*\)"/\1/' | tr -d '"')
+
+# --- Check 1: lib/posts-meta.js ---
+if grep -q "'$SLUG'" lib/posts-meta.js; then
+  echo "✅ posts-meta.js: $SLUG found"
+else
+  echo "❌ MISSING in lib/posts-meta.js"
+  echo ""
+  echo "MANUALLY ADD this entry to allPosts array (insert at TOP, after '['):"
+  echo ""
+  cat << 'EOF'
+  {
+    slug: 'SLUG_HERE',
+    title: 'TITLE_HERE',
+    category: 'Market Intelligence',
+    excerpt: 'EXCERPT_HERE',
+    date: 'YYYY-MM-DD',
+    readTime: '16 min read'
+  },
+EOF
+  echo ""
+  echo "Replace SLUG_HERE with: $SLUG"
+  echo "Replace TITLE_HERE with: $TITLE"
+  echo "Replace date with: $DATE"
+  echo "Replace category with: $CAT"
+  exit 1
+fi
+
+# --- Check 2: page.js postMetadata ---
+if grep -q "'$SLUG':" app/blog/\[slug\]/page.js; then
+  echo "✅ page.js postMetadata: $SLUG found"
+else
+  echo "❌ MISSING in page.js postMetadata"
+  echo ""
+  echo "MANUALLY ADD this entry to postMetadata object:"
+  echo ""
+  cat << 'EOF'
+  'SLUG_HERE': {
+    metaTitle: 'TITLE_HERE',
+    metaDescription: 'DESCRIPTION_HERE',
+    keywords: 'keywords here',
+  },
+EOF
+  echo ""
+  echo "Replace SLUG_HERE with: $SLUG"
+  echo "Replace TITLE_HERE with: $TITLE"
+  exit 1
+fi
 ```
+
+**If ANY check fails → STOP. Do NOT proceed to Step 3. Manually add the entries first.**
+
+This has been missed 3 times (May 12, May 15, May 15 again).
 
 **Step 3 — Build and verify:**
 ```bash
