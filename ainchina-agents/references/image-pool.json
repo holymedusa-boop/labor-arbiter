@@ -285,9 +285,10 @@
       {
         "id": "photo-1531297484001-80022131f5a1",
         "url": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=800",
-        "used_count": 1,
-        "status": "fresh",
-        "last_used": "2026-05-11"
+        "used_count": 2,
+        "status": "available",
+        "last_used": "2026-06-02",
+        "notes": "Hero image for minimax-300m-users-arr-doubles-a-share-ipo-china-ai-export-2026"
       },
       {
         "id": "photo-1550751827-4bd374c3f58b",
@@ -387,8 +388,10 @@
       {
         "id": "photo-1517245386807-bb43f82c33c4",
         "url": "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800",
-        "used_count": 0,
-        "status": "fresh"
+        "used_count": 1,
+        "status": "available",
+        "last_used": "2026-06-01",
+        "notes": "Hero image for china-ai-drama-revolution-bytedance-650m-empire-2026"
       }
     ]
   },
