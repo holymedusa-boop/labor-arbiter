@@ -130,6 +130,8 @@ Track which template was last used:
 
 | Date | Article | Template Used |
 |------|---------|---------------|
+| 2026-09-20 | china-open-source-ai-empire-brics-frontier-gap-2026 | Template E (Timeline) |
+| 2026-09-19 | china-ai-asean-deployment-playbook-southeast-asia-2026 | Template B (Contrarian Take) |
 | 2026-09-18 | china-humanoid-robots-military-combat-readiness-2026 | Template C (Deep Dive Single Subject) |
 | 2026-09-18 | doubao-ai-agent-phone-nubia-navix-ultra-china-2026 | Template C (Deep Dive Single Subject) |
 | 2026-09-16 | wechat-xiaowei-a2a-agents-talk-agents-china-2026 | Template F (Phenomenon Analysis) |
