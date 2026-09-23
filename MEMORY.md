@@ -130,6 +130,11 @@ Track which template was last used:
 
 | Date | Article | Template Used |
 |------|---------|---------------|
+| 2026-09-24 | china-ai-drug-discovery-paradigm-shift-pharma-2026 | Template F (Phenomenon Analysis) |
+| 2026-09-23 | china-ai-security-doctrine-crackdown-national-secrets-2026 | Template B (Contrarian Take) |
+| 2026-09-23 | huawei-ascend-960-supernode-npo-compute-sovereignty-2026 | Template A (Narrative Opening) |
+| 2026-09-22 | china-ai-ipo-gold-rush-deepseek-moonshot-capital-markets-2026 | Template A (Narrative Opening) |
+| 2026-09-20 | china-ai-token-price-war-deepseek-zhipu-2026 | Template D (Comparative Framework) |
 | 2026-09-20 | china-open-source-ai-empire-brics-frontier-gap-2026 | Template E (Timeline) |
 | 2026-09-19 | china-ai-asean-deployment-playbook-southeast-asia-2026 | Template B (Contrarian Take) |
 | 2026-09-18 | china-humanoid-robots-military-combat-readiness-2026 | Template C (Deep Dive Single Subject) |

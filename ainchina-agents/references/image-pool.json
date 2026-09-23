@@ -28,9 +28,10 @@
         {
           "id": "photo-1551288049-bebda4e38f71",
           "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
-          "used_count": 5,
-          "last_used": "2026-05-30",
-          "status": "available"
+          "used_count": 6,
+          "last_used": "2026-08-01",
+          "status": "available",
+          "notes": "Inline image for huawei-atlas-950-superpod-china-ai-chip-independence-2026"
         },
         {
           "id": "photo-1618005182384-a83a8bd57fbe",
@@ -57,9 +58,10 @@
         {
           "id": "photo-1518770660439-4636190af475",
           "url": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=800",
-          "used_count": 3,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 4,
+          "last_used": "2026-08-01",
+          "status": "available",
+          "notes": "Hero image for huawei-atlas-950-superpod-china-ai-chip-independence-2026"
         }
       ]
     },
@@ -104,9 +106,10 @@
         {
           "id": "photo-1512941937669-90a1b58e7e9c",
           "url": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
-          "used_count": 4,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 5,
+          "last_used": "2026-09-18",
+          "status": "available",
+          "notes": "hero image for doubao-ai-agent-phone-nubia-navix-ultra-china-2026"
         }
       ]
     },
@@ -210,9 +213,10 @@
         {
           "id": "photo-1558494949-ef010cbdcc31",
           "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
-          "used_count": 2,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 3,
+          "last_used": "2026-09-18",
+          "status": "available",
+          "notes": "inline image for doubao-ai-agent-phone-nubia-navix-ultra-china-2026"
         },
         {
           "id": "photo-1611162617474-5b21e879e113",
@@ -224,9 +228,10 @@
         {
           "id": "photo-1531746790731-6c087fecd65a",
           "url": "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=800",
-          "used_count": 3,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 4,
+          "last_used": "2026-09-18",
+          "status": "available",
+          "notes": "inline image for doubao-ai-agent-phone-nubia-navix-ultra-china-2026"
         }
       ]
     },
@@ -254,12 +259,12 @@
     "description": "NEW images — never used before. Prioritize these.",
     "images": [
       {
-        "id": "photo-1504384308090-c54be3855833",
-        "url": "https://images.unsplash.com/photo-1504384308090-c54be3855833?w=1200",
+        "id": "photo-1594915440248-1e419eba6611",
+        "url": "https://images.unsplash.com/photo-1594915440248-1e419eba6611?w=1200",
         "used_count": 2,
-        "status": "RETIRED — Unsplash removed this photo (HTTP 404)",
-        "last_used": "2026-05-22",
-        "notes": "Replaced with photo-1594915440248-1e419eba6611 in six-networks article"
+        "last_used": "2026-06-30",
+        "status": "available",
+        "notes": "Used in six-networks article and 2026-06-30 autonomous driving article (REPLACED)"
       },
       {
         "id": "photo-1526374965328-7f61d4dc18c5",
@@ -293,10 +298,10 @@
       {
         "id": "photo-1550751827-4bd374c3f58b",
         "url": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
-        "used_count": 2,
+        "used_count": 3,
         "status": "available",
-        "last_used": "2026-05-28",
-        "notes": "Hero image for china-ai-models-dominate-global-api-traffic-token-export-2026"
+        "last_used": "2026-09-23",
+        "notes": "Hero image for china-ai-security-doctrine-crackdown-national-secrets-2026; previously china-ai-models-dominate-global-api-traffic-token-export-2026"
       },
       {
         "id": "photo-1510915228340-29c85a43dcfe",
@@ -337,8 +342,9 @@
         "id": "photo-1507721999472-8ed4421c4af2",
         "url": "https://images.unsplash.com/photo-1507721999472-8ed4421c4af2?w=800",
         "used_count": 1,
-        "status": "fresh",
-        "last_used": "2026-05-11"
+        "status": "used",
+        "last_used": "2026-06-30",
+        "notes": "Hero image for china-global-autonomous-driving-regulation-ads-gtr-2026"
       },
       {
         "id": "photo-1504384764586-bb4cdc1287e0",
@@ -392,6 +398,30 @@
         "status": "available",
         "last_used": "2026-06-01",
         "notes": "Hero image for china-ai-drama-revolution-bytedance-650m-empire-2026"
+      },
+      {
+        "id": "photo-1576086213369-97a306d36557",
+        "url": "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800",
+        "used_count": 1,
+        "status": "used",
+        "last_used": "2026-09-24",
+        "notes": "Hero image for china-ai-drug-discovery-paradigm-shift-pharma-2026"
+      },
+      {
+        "id": "photo-1532187863486-abf9dbad1b69",
+        "url": "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=800",
+        "used_count": 1,
+        "status": "used",
+        "last_used": "2026-09-24",
+        "notes": "Inline image for china-ai-drug-discovery-paradigm-shift-pharma-2026"
+      },
+      {
+        "id": "photo-1579154204601-01588f351e67",
+        "url": "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800",
+        "used_count": 1,
+        "status": "used",
+        "last_used": "2026-09-24",
+        "notes": "Inline image for china-ai-drug-discovery-paradigm-shift-pharma-2026"
       }
     ]
   },
