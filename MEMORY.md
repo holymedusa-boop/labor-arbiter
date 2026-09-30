@@ -130,6 +130,18 @@ Track which template was last used:
 
 | Date | Article | Template Used |
 |------|---------|---------------|
+| 2026-09-30 | china-photonic-computing-revolution-lightelligence-taichi-2026 | Template D (Comparative Framework) |
+| 2026-09-30 | china-ai-goes-global-open-source-cloud-empire-2026 | Template F (Phenomenon Analysis) |
+| 2026-09-29 | china-ai-export-control-window-closes-silence-2026 | Template A (Narrative Opening) |
+| 2026-09-29 | space-bunny-anonymous-model-china-ai-stealth-2026 | Template C (Deep Dive Single Subject) |
+| 2026-09-28 | china-us-ai-safety-channel-too-late-summit-2026 | Template B (Contrarian Take) |
+| 2026-09-27 | manus-ai-4-billion-meta-blocked-hong-kong-ipo-2026 | Template E (Timeline) |
+| 2026-09-27 | stepfun-step-5-preview-600b-moe-china-ai-2026 | Template C (Deep Dive Single Subject) |
+| 2026-09-26 | china-cac-probe-deepseek-moonshot-data-leak-2026 | Template B (Contrarian Take) |
+| 2026-09-26 | deepseek-billion-revenue-price-war-2026 | Template A (Narrative Opening) |
+| 2026-09-25 | agentic-cloud-war-huawei-alibaba-china-ai-agents-2026 | Template D (Comparative Framework) |
+| 2026-09-25 | alibaba-zhenwu-v900-chip-nvidia-china-ai-silicon-2026 | Template C (Deep Dive Single Subject) |
+| 2026-09-24 | us-china-ai-summit-open-source-reckoning-2026 | Template E (Timeline) |
 | 2026-09-24 | china-ai-drug-discovery-paradigm-shift-pharma-2026 | Template F (Phenomenon Analysis) |
 | 2026-09-23 | china-ai-security-doctrine-crackdown-national-secrets-2026 | Template B (Contrarian Take) |
 | 2026-09-23 | huawei-ascend-960-supernode-npo-compute-sovereignty-2026 | Template A (Narrative Opening) |
