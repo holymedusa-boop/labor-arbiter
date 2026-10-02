@@ -130,6 +130,9 @@ Track which template was last used:
 
 | Date | Article | Template Used |
 |------|---------|---------------|
+| 2026-10-03 | china-humanoid-robots-97-percent-global-shipments-2026 | Template E (Timeline/Historical Arc) |
+| 2026-10-02 | china-one-person-company-ai-solo-entrepreneur-revolution-2026 | Template F (Phenomenon Analysis) |
+| 2026-10-02 | glm-5-3-cyber-weapon-open-source-dilemma-2026 | Template B (Contrarian Take) |
 | 2026-09-30 | china-photonic-computing-revolution-lightelligence-taichi-2026 | Template D (Comparative Framework) |
 | 2026-09-30 | china-ai-goes-global-open-source-cloud-empire-2026 | Template F (Phenomenon Analysis) |
 | 2026-09-29 | china-ai-export-control-window-closes-silence-2026 | Template A (Narrative Opening) |
