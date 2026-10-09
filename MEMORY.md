@@ -130,6 +130,16 @@ Track which template was last used:
 
 | Date | Article | Template Used |
 |------|---------|---------------|
+| 2026-10-10 | china-new-productive-forces-guidelines-ai-bubble-2026 | Template E (Timeline/Historical Arc) |
+| 2026-10-09 | nvidia-china-exit-write-down-domestic-chip-rise-2026 | Template B (Contrarian Take) |
+| 2026-10-08 | xiaomi-mimo-openrouter-ai-stack-conquest-2026 | Template F (Phenomenon Analysis) |
+| 2026-10-08 | deepseek-silence-v4-pro-china-ai-strategy-2026 | Template A (Narrative Opening) |
+| 2026-10-07 | china-us-ai-gap-3-percent-bloomberg-october-2026 | Template E (Timeline/Historical Arc) |
+| 2026-10-06 | huawei-qualcomm-patent-reversal-ai-chip-licensing-2026 | Template E (Timeline/Historical Arc) |
+| 2026-10-05 | qwen-flash-next-local-frontier-consumer-hardware-2026 | Template F (Phenomenon Analysis) |
+| 2026-10-05 | ulanqab-token-capital-china-ai-compute-westward-2026 | Template C (Deep Dive Single Subject) |
+| 2026-10-04 | two-stacks-one-hotline-us-china-ai-parallel-2026 | Template D (Comparative Framework) |
+| 2026-10-03 | deepseek-open-sources-huawei-ascend-ai-toolchain-2026 | Template A (Narrative Opening) |
 | 2026-10-03 | china-humanoid-robots-97-percent-global-shipments-2026 | Template E (Timeline/Historical Arc) |
 | 2026-10-02 | china-one-person-company-ai-solo-entrepreneur-revolution-2026 | Template F (Phenomenon Analysis) |
 | 2026-10-02 | glm-5-3-cyber-weapon-open-source-dilemma-2026 | Template B (Contrarian Take) |
