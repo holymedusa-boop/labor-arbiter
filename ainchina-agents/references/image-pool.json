@@ -28,10 +28,10 @@
         {
           "id": "photo-1551288049-bebda4e38f71",
           "url": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
-          "used_count": 6,
-          "last_used": "2026-08-01",
+          "used_count": 7,
+          "last_used": "2026-10-11",
           "status": "available",
-          "notes": "Inline image for huawei-atlas-950-superpod-china-ai-chip-independence-2026"
+          "notes": "Inline image for china-ai-office-agent-war-context-not-models-2026"
         },
         {
           "id": "photo-1618005182384-a83a8bd57fbe",
@@ -44,8 +44,8 @@
         {
           "id": "photo-1620641788421-7a1c342ea42e",
           "url": "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?w=800",
-          "used_count": 2,
-          "last_used": "2026-05-11",
+          "used_count": 4,
+          "last_used": "2026-10-08",
           "status": "available"
         },
         {
@@ -126,16 +126,17 @@
         {
           "id": "photo-1553729459-efe14ef6055d",
           "url": "https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=800",
-          "used_count": 4,
-          "last_used": "2026-05-30",
+          "used_count": 5,
+          "last_used": "2026-10-08",
           "status": "available"
         },
         {
           "id": "photo-1551434678-e076c223a692",
           "url": "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
-          "used_count": 3,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 6,
+          "last_used": "2026-10-11",
+          "status": "available",
+          "notes": "Inline image for china-ai-office-agent-war-context-not-models-2026"
         },
         {
           "id": "photo-1551836022-d5d88e9218df",
@@ -187,16 +188,17 @@
         {
           "id": "photo-1551650975-87deedd944c3",
           "url": "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800",
-          "used_count": 3,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 4,
+          "last_used": "2026-10-08",
+          "status": "used",
+          "notes": "Inline image for xiaomi-mimo-openrouter-ai-stack-conquest-2026"
         },
         {
           "id": "photo-1553877522-43269d4ea984",
           "url": "https://images.unsplash.com/photo-1553877522-43269d4ea984?w=800",
-          "used_count": 2,
-          "last_used": "2026-05-30",
-          "status": "available"
+          "used_count": 3,
+          "last_used": "2026-10-06",
+          "status": "used"
         }
       ]
     },
@@ -206,24 +208,26 @@
         {
           "id": "photo-1574717024653-61fd2cf4d44d",
           "url": "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?w=800",
-          "used_count": 2,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 3,
+          "last_used": "2026-10-11",
+          "status": "available",
+          "notes": "Hero image for china-ai-office-agent-war-context-not-models-2026"
         },
         {
           "id": "photo-1558494949-ef010cbdcc31",
           "url": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800",
-          "used_count": 3,
-          "last_used": "2026-09-18",
-          "status": "available",
+          "used_count": 4,
+          "last_used": "2026-10-06",
+          "status": "used",
           "notes": "inline image for doubao-ai-agent-phone-nubia-navix-ultra-china-2026"
         },
         {
           "id": "photo-1611162617474-5b21e879e113",
           "url": "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=800",
-          "used_count": 3,
-          "last_used": "2026-05-11",
-          "status": "available"
+          "used_count": 5,
+          "last_used": "2026-09-30",
+          "status": "available",
+          "notes": "Inline image for china-ai-goes-global-open-source-cloud-empire-2026"
         },
         {
           "id": "photo-1531746790731-6c087fecd65a",
@@ -261,31 +265,34 @@
       {
         "id": "photo-1594915440248-1e419eba6611",
         "url": "https://images.unsplash.com/photo-1594915440248-1e419eba6611?w=1200",
-        "used_count": 2,
-        "last_used": "2026-06-30",
-        "status": "available",
+        "used_count": 3,
+        "last_used": "2026-10-06",
+        "status": "used",
         "notes": "Used in six-networks article and 2026-06-30 autonomous driving article (REPLACED)"
       },
       {
         "id": "photo-1526374965328-7f61d4dc18c5",
         "url": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800",
-        "used_count": 1,
-        "status": "fresh",
-        "last_used": "2026-05-11"
+        "used_count": 2,
+        "status": "used",
+        "last_used": "2026-10-05",
+        "notes": "Inline for qwen-flash-next-local-frontier-consumer-hardware-2026 (2026-10-05)"
       },
       {
         "id": "photo-1504639725590-34d0984388bd",
         "url": "https://images.unsplash.com/photo-1504639725590-34d0984388bd?w=800",
-        "used_count": 1,
-        "status": "available",
-        "last_used": "2026-05-22"
+        "used_count": 2,
+        "status": "used",
+        "last_used": "2026-10-08",
+        "notes": "Inline image for xiaomi-mimo-openrouter-ai-stack-conquest-2026"
       },
       {
         "id": "photo-1519389950473-47ba0277781c",
         "url": "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=800",
-        "used_count": 1,
+        "used_count": 2,
         "status": "available",
-        "last_used": "2026-05-22"
+        "last_used": "2026-09-30",
+        "notes": "Hero image for china-ai-goes-global-open-source-cloud-empire-2026"
       },
       {
         "id": "photo-1531297484001-80022131f5a1",
@@ -306,9 +313,9 @@
       {
         "id": "photo-1510915228340-29c85a43dcfe",
         "url": "https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?w=800",
-        "used_count": 1,
+        "used_count": 2,
         "status": "available",
-        "last_used": "2026-05-22"
+        "last_used": "2026-10-08"
       },
       {
         "id": "photo-1526379095098-d400fd0bf935",
@@ -334,9 +341,10 @@
       {
         "id": "photo-1461749280684-dccba630e2f6",
         "url": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800",
-        "used_count": 1,
-        "status": "available",
-        "last_used": "2026-05-22"
+        "used_count": 2,
+        "status": "used",
+        "last_used": "2026-10-08",
+        "notes": "Hero image for xiaomi-mimo-openrouter-ai-stack-conquest-2026"
       },
       {
         "id": "photo-1507721999472-8ed4421c4af2",
@@ -355,15 +363,18 @@
       {
         "id": "photo-1518432031352-d6fc5c10da5a",
         "url": "https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=800",
-        "used_count": 1,
-        "status": "fresh",
-        "last_used": "2026-05-11"
+        "used_count": 2,
+        "status": "used",
+        "last_used": "2026-10-05",
+        "notes": "Hero for qwen-flash-next-local-frontier-consumer-hardware-2026 (2026-10-05)"
       },
       {
         "id": "photo-1523961131990-5ea7c61b2107",
         "url": "https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?w=800",
-        "used_count": 0,
-        "status": "fresh"
+        "used_count": 1,
+        "status": "used",
+        "last_used": "2026-10-05",
+        "notes": "Inline for qwen-flash-next-local-frontier-consumer-hardware-2026 (2026-10-05)"
       },
       {
         "id": "photo-1555949963-aa79dcee981d",

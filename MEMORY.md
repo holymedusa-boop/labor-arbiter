@@ -130,6 +130,9 @@ Track which template was last used:
 
 | Date | Article | Template Used |
 |------|---------|---------------|
+| 2026-10-11 | china-ai-office-agent-war-context-not-models-2026 | Template B (Contrarian Take) |
+| 2026-10-11 | china-ai-banking-revolution-digital-workforce-2026 | Template A (Narrative Opening) |
+| 2026-10-10 | moonshot-ai-50-billion-sovereign-ai-capital-blueprint-2026 | Template C (Deep Dive Single Subject) |
 | 2026-10-10 | china-new-productive-forces-guidelines-ai-bubble-2026 | Template E (Timeline/Historical Arc) |
 | 2026-10-09 | nvidia-china-exit-write-down-domestic-chip-rise-2026 | Template B (Contrarian Take) |
 | 2026-10-08 | xiaomi-mimo-openrouter-ai-stack-conquest-2026 | Template F (Phenomenon Analysis) |
